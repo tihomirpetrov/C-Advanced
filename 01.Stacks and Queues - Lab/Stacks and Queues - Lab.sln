@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06.TrafficJam", "P06.Traff
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01.ReverseStrings", "P01.ReverseStrings\P01.ReverseStrings.csproj", "{149626FE-45DD-4C34-B859-9D92D137136D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02.SimpleCalculator", "P02.SimpleCalculator\P02.SimpleCalculator.csproj", "{C7CF4144-6E98-40FB-95FE-B0D0116FB239}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{149626FE-45DD-4C34-B859-9D92D137136D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{149626FE-45DD-4C34-B859-9D92D137136D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{149626FE-45DD-4C34-B859-9D92D137136D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7CF4144-6E98-40FB-95FE-B0D0116FB239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7CF4144-6E98-40FB-95FE-B0D0116FB239}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7CF4144-6E98-40FB-95FE-B0D0116FB239}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7CF4144-6E98-40FB-95FE-B0D0116FB239}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
