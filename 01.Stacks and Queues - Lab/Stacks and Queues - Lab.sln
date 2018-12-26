@@ -5,11 +5,13 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05.HotPotato", "P05.HotPotato\P05.HotPotato.csproj", "{F0809F74-48A9-4EB4-9C70-8586039A8D1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06.TrafficJam", "P06.TrafficJam\P06.TrafficJam.csproj", "{23227B7C-5348-4F67-BA82-E1C2DA86D1CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06.TrafficJam", "P06.TrafficJam\P06.TrafficJam.csproj", "{23227B7C-5348-4F67-BA82-E1C2DA86D1CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01.ReverseStrings", "P01.ReverseStrings\P01.ReverseStrings.csproj", "{149626FE-45DD-4C34-B859-9D92D137136D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01.ReverseStrings", "P01.ReverseStrings\P01.ReverseStrings.csproj", "{149626FE-45DD-4C34-B859-9D92D137136D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02.SimpleCalculator", "P02.SimpleCalculator\P02.SimpleCalculator.csproj", "{C7CF4144-6E98-40FB-95FE-B0D0116FB239}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02.SimpleCalculator", "P02.SimpleCalculator\P02.SimpleCalculator.csproj", "{C7CF4144-6E98-40FB-95FE-B0D0116FB239}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.DecimalToBinaryConverter", "P03.DecimalToBinaryConverter\P03.DecimalToBinaryConverter.csproj", "{63D442C4-CC68-473B-BF98-5FC9E0295896}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{C7CF4144-6E98-40FB-95FE-B0D0116FB239}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7CF4144-6E98-40FB-95FE-B0D0116FB239}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7CF4144-6E98-40FB-95FE-B0D0116FB239}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63D442C4-CC68-473B-BF98-5FC9E0295896}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63D442C4-CC68-473B-BF98-5FC9E0295896}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63D442C4-CC68-473B-BF98-5FC9E0295896}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63D442C4-CC68-473B-BF98-5FC9E0295896}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
