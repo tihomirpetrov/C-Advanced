@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01.ReverseNumbersWithAStack", "P01.ReverseNumbersWithAStack\P01.ReverseNumbersWithAStack.csproj", "{36EF4469-1927-416F-ABF6-E26FF79E0249}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02.BasicStackOperations", "P02.BasicStackOperations\P02.BasicStackOperations.csproj", "{DD0080CD-1FB7-4667-B6BF-B859C6D62190}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02.BasicStackOperations", "P02.BasicStackOperations\P02.BasicStackOperations.csproj", "{DD0080CD-1FB7-4667-B6BF-B859C6D62190}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

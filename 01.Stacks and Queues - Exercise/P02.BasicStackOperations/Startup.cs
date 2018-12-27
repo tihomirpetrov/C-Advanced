@@ -14,7 +14,7 @@
             int numbersToPeek = int.Parse(input[2]);
             Stack<int> stack = new Stack<int>();
             int[] sequence = Console.ReadLine().Split().Select(int.Parse).ToArray();
-
+            
             for (int i = 0; i < numbersToPush; i++)
             {
                 stack.Push(sequence[i]);
@@ -22,16 +22,24 @@
 
             for (int i = 0; i < numbersToPop; i++)
             {
-                stack.Pop();
+                stack.Pop();               
             }
 
-            for (int i = 0; i < stack.Count; i++)
+            if (stack.Contains(numbersToPeek))
             {
-                if (numbersToPeek == stack.Peek())
-                {
-                    Console.WriteLine(true);
-                }                         
+                Console.WriteLine("true");
             }
+            else
+            {
+                if (stack.Count == 0)
+                {
+                    Console.WriteLine(0);
+                }
+                else
+                {
+                    Console.WriteLine(stack.Min());
+                }
+            }           
         }
     }
 }
