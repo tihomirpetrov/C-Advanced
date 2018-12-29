@@ -13,13 +13,21 @@
 
             for (int i = 0; i < n; i++)
             {
-                int[] sequence = Console.ReadLine().Split().Select(int.Parse).ToArray();
-                for (int j = 0; j < sequence.Length; j++)
+                string[] tokens = Console.ReadLine().Split().ToArray();
+                string command = tokens[0];
+
+                if (command == "1")
                 {
-                    numbers.Push(sequence[j]);
+                    int numberToPush = int.Parse(tokens[1]);
+                    numbers.Push(numberToPush);
                 }
 
-                if (i % 3 == 0)
+                else if (command == "2")
+                {
+                    numbers.Pop();
+                }
+
+                else
                 {
                     Console.WriteLine(numbers.Max());
                 }

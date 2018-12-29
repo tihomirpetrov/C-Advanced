@@ -1,7 +1,7 @@
 ﻿namespace P04.BasicQueueOperations
 {
     using System;
-    class Program
+    public class Startup
     {
         public static void Main()
         {
