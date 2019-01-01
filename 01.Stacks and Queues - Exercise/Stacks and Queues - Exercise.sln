@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04.BasicQueueOperations", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05.CalculateSequenceWithQueue", "P05.CalculateSequenceWithQueue\P05.CalculateSequenceWithQueue.csproj", "{2B0F7C59-0E35-4E38-9F54-96742B88B518}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06.TruckTour", "P06.TruckTour\P06.TruckTour.csproj", "{77B6D846-3C99-415A-B56E-DB5F2FCFB704}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06.TruckTour", "P06.TruckTour\P06.TruckTour.csproj", "{77B6D846-3C99-415A-B56E-DB5F2FCFB704}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P10.PoisonousPlants", "P10.PoisonousPlants\P10.PoisonousPlants.csproj", "{136F6D20-4A7E-492C-BE3E-5BEE5C5443E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{77B6D846-3C99-415A-B56E-DB5F2FCFB704}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77B6D846-3C99-415A-B56E-DB5F2FCFB704}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77B6D846-3C99-415A-B56E-DB5F2FCFB704}.Release|Any CPU.Build.0 = Release|Any CPU
+		{136F6D20-4A7E-492C-BE3E-5BEE5C5443E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{136F6D20-4A7E-492C-BE3E-5BEE5C5443E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{136F6D20-4A7E-492C-BE3E-5BEE5C5443E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{136F6D20-4A7E-492C-BE3E-5BEE5C5443E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
