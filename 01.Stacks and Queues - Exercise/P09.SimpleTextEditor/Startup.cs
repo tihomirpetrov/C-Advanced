@@ -8,19 +8,19 @@
         public static void Main()
         {
             Stack<string> stack = new Stack<string>();
-            int operationsCount = int.Parse(Console.ReadLine());
             string text = string.Empty;
-
+            int operationsCount = int.Parse(Console.ReadLine());
+            
             for (int i = 0; i < operationsCount; i++)
             {
-                string[] input = Console.ReadLine().Split();
+                string[] input = Console.ReadLine().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
                 string currentCommand = input[0];
 
                 if (currentCommand == "1")
                 {
                     string currentText = input[1];
                     stack.Push(text);
-                    text = currentText;
+                    text += currentText;
                 }
                 else if (currentCommand == "2")
                 {
