@@ -13,7 +13,7 @@
             
             for (int i = 0; i < operationsCount; i++)
             {
-                string[] input = Console.ReadLine().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                string[] input = Console.ReadLine().Split();
                 string currentCommand = input[0];
 
                 if (currentCommand == "1")
