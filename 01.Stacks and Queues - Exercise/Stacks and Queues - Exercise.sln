@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07.BalancedParentheses", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06.TruckTour-2", "P06.TruckTour-2\P06.TruckTour-2.csproj", "{E3316193-C09C-4AB6-AEBB-2AAD3ACFBB0F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07.BalancedParentheses-2", "P07.BalancedParentheses-2\P07.BalancedParentheses-2.csproj", "{5194CC46-1891-4AB8-AE8F-AEC2E57A1B92}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{E3316193-C09C-4AB6-AEBB-2AAD3ACFBB0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3316193-C09C-4AB6-AEBB-2AAD3ACFBB0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3316193-C09C-4AB6-AEBB-2AAD3ACFBB0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5194CC46-1891-4AB8-AE8F-AEC2E57A1B92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5194CC46-1891-4AB8-AE8F-AEC2E57A1B92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5194CC46-1891-4AB8-AE8F-AEC2E57A1B92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5194CC46-1891-4AB8-AE8F-AEC2E57A1B92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
