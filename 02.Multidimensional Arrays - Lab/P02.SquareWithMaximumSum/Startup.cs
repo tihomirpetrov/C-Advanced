@@ -35,6 +35,7 @@
                 {
                     sum += matrix[j, i];
                 }
+
                 Console.WriteLine(sum);
             }
         }
