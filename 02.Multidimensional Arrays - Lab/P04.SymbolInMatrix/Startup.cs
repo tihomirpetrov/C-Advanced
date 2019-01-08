@@ -1,8 +1,7 @@
 ﻿namespace P04.SymbolInMatrix
 {
     using System;
-    using System.Linq;
-
+    
     public class Startup
     {
         public static void Main()
@@ -31,8 +30,9 @@
                 {
                     if (matrix[i,j].ToString() == symbol)
                     {
-                        Console.WriteLine($"{i}, {j}");
+                        Console.WriteLine($"({i}, {j})");
                         isSymbol = true;
+                        return;
                     }
                 }
             }
