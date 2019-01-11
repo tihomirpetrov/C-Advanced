@@ -19,10 +19,11 @@
                 sumSecondDiagonal += row[sizeOfMatrix - 1 - i];
             }
 
-            Console.WriteLine(sumFirstDiagonal);
-            Console.WriteLine(sumSecondDiagonal);
+            //Console.WriteLine(sumFirstDiagonal);
+            //Console.WriteLine(sumSecondDiagonal);
 
-            Console.WriteLine(Math.Abs(sumFirstDiagonal, sumSecondDiagonal));
+            decimal abs = (Math.Abs(sumFirstDiagonal) - Math.Abs(sumSecondDiagonal));
+            Console.WriteLine(Math.Abs(abs));
         }
     }
 }
