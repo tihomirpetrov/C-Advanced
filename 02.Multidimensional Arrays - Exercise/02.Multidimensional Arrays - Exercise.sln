@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01.MatrixOfPalindromes", "P01.MatrixOfPalindromes\P01.MatrixOfPalindromes.csproj", "{F8492A34-E04D-4F8A-999E-09CB76D159B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02.DiagonalDifference", "P02.DiagonalDifference\P02.DiagonalDifference.csproj", "{904E8AD6-73BC-4F85-8EDF-0DAC9330653F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02.DiagonalDifference", "P02.DiagonalDifference\P02.DiagonalDifference.csproj", "{904E8AD6-73BC-4F85-8EDF-0DAC9330653F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.2x2SquaresInMatrix", "P03.2x2SquaresInMatrix\P03.2x2SquaresInMatrix.csproj", "{616E7FD1-F3A1-4607-B214-6CEBFDED4086}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{904E8AD6-73BC-4F85-8EDF-0DAC9330653F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{904E8AD6-73BC-4F85-8EDF-0DAC9330653F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{904E8AD6-73BC-4F85-8EDF-0DAC9330653F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{616E7FD1-F3A1-4607-B214-6CEBFDED4086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{616E7FD1-F3A1-4607-B214-6CEBFDED4086}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{616E7FD1-F3A1-4607-B214-6CEBFDED4086}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{616E7FD1-F3A1-4607-B214-6CEBFDED4086}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -26,10 +26,7 @@
             {
                 sumSecondDiagonal += matrix[row][col];
             }
-            //Console.WriteLine(sumFirstDiagonal);
-            //Console.WriteLine(sumSecondDiagonal);
-
-            //long abs = (Math.Abs(sumFirstDiagonal) - Math.Abs(sumSecondDiagonal));
+           
             Console.WriteLine(Math.Abs(sumFirstDiagonal - sumSecondDiagonal));
         }
     }
