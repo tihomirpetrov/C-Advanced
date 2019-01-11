@@ -16,7 +16,7 @@
             {
                 for (int j = 0; j < col; j++)
                 {
-                    Console.Write($"{alphabet[i]}{alphabet[i+j]}{alphabet[0+i]} ");
+                    Console.Write($"{alphabet[i]}{alphabet[i + j]}{alphabet[0 + i]} ");
                 }
                 Console.WriteLine();
             }
