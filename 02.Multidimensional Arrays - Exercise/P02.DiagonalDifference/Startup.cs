@@ -14,7 +14,7 @@
 
             for (int i = 0; i < sizeOfMatrix; i++)
             {
-                decimal[] row = Console.ReadLine().Split().Select(decimal.Parse).ToArray();
+                decimal[] row = Console.ReadLine().Split(' ',StringSplitOptions.RemoveEmptyEntries).Select(decimal.Parse).ToArray();
                 sumFirstDiagonal += row[i];
                 sumSecondDiagonal += row[sizeOfMatrix - 1 - i];
             }
