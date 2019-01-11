@@ -14,16 +14,23 @@
 
             for (int i = 0; i < sizeOfMatrix; i++)
             {
-                long[] row = Console.ReadLine().Split(' ',StringSplitOptions.RemoveEmptyEntries).Select(long.Parse).ToArray();
-                sumFirstDiagonal += row[i];
-                sumSecondDiagonal += row[sizeOfMatrix - 1 - i];
+                matrix[i] = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries).Select(long.Parse).ToArray();
             }
 
+            for (int i = 0; i < sizeOfMatrix; i++)
+            {
+                sumFirstDiagonal += matrix[i][i];
+            }
+
+            for (int row = 0, col = sizeOfMatrix - 1; row < sizeOfMatrix; row++, col--)
+            {
+                sumSecondDiagonal += matrix[row][col];
+            }
             //Console.WriteLine(sumFirstDiagonal);
             //Console.WriteLine(sumSecondDiagonal);
 
-            long abs = (Math.Abs(sumFirstDiagonal) - Math.Abs(sumSecondDiagonal));
-            Console.WriteLine(Math.Abs(abs));
+            //long abs = (Math.Abs(sumFirstDiagonal) - Math.Abs(sumSecondDiagonal));
+            Console.WriteLine(Math.Abs(sumFirstDiagonal - sumSecondDiagonal));
         }
     }
 }
