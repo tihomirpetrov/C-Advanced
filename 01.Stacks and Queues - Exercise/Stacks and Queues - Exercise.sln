@@ -27,7 +27,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P08.StackFibonacci", "P08.S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P09.SimpleTextEditor", "P09.SimpleTextEditor\P09.SimpleTextEditor.csproj", "{C0292850-D730-46DC-885E-204DF46E4A07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02.StackSum", "P02.StackSum\P02.StackSum.csproj", "{D239DAE6-F65F-4D55-ACCB-BB0658DD2531}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02.StackSum", "P02.StackSum\P02.StackSum.csproj", "{D239DAE6-F65F-4D55-ACCB-BB0658DD2531}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
