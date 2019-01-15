@@ -19,7 +19,7 @@
                 int clothes = clothesInTheBox[i];
                 if (capacity > clothes)
                 {
-                    if (sum + clothes > capacity)
+                    if (sum + clothes >= capacity)
                     {
                         sum += clothes - capacity;
                         box++;
