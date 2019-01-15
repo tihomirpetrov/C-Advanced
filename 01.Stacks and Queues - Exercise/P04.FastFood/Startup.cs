@@ -10,30 +10,25 @@
         {
             int foodQuantity = int.Parse(Console.ReadLine());
             int[] quantityOfOrders = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
-            Queue<int> orders = new Queue<int>(quantityOfOrders.Reverse());
+            Queue<int> orders = new Queue<int>(quantityOfOrders);
 
             Console.WriteLine(orders.Max());
 
-            while (orders.Count > 0)
+            for (int i = 0; i < quantityOfOrders.Length; i++)
             {
-                if (foodQuantity > orders.Sum())
+                if (foodQuantity >= orders.Peek())
                 {
-                    foodQuantity -= orders.Peek();
-                    orders.Dequeue();
-                }
-                else
-                {
-                    break;
+                    foodQuantity -= orders.Dequeue();
                 }
             }
-
+                       
             if (foodQuantity >= orders.Sum())
             {
                 Console.WriteLine("Orders complete");
             }
             else
             {
-                Console.WriteLine($"Orders left: {orders.Peek()}");
+                Console.WriteLine($"Orders left: {string.Join(" ", orders)}");
             }
         }
     }
