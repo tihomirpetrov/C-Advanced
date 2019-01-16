@@ -2,60 +2,87 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
 
     public class Startup
     {
         public static void Main()
         {
             int durationOfGreenLight = int.Parse(Console.ReadLine());
-            int saveGreenLight = durationOfGreenLight;
             int durationOfFreeWindow = int.Parse(Console.ReadLine());
+            int saveGreenLight = durationOfGreenLight;
+            int saveFreeWindow = durationOfFreeWindow;
+
             Queue<string> car = new Queue<string>();
-            int counter = 0;
-            int damageCount = 0;
+            int counter = 0;        
+            int greenLightLeft = 0;
 
             string command = Console.ReadLine();
 
-            while (command != "END")
+            while (true)
             {
-                if (command != "green")
+                if (command == "END")
                 {
-                    car.Enqueue(command);
+                    Console.WriteLine("Everyone is safe.");
+                    Console.WriteLine($"{counter} total cars passed the crossroads.");
+                    break;
                 }
-                else
+
+                if (command == "green")
                 {
-                    while (car.Count > 0)
+                    durationOfGreenLight = saveGreenLight;
+                    durationOfFreeWindow = saveFreeWindow;
+
+                    while (car.Any())
                     {
-                        string passingCar = car.Peek();
-                        if (passingCar.Length <= durationOfGreenLight + durationOfFreeWindow)
+                        if (durationOfGreenLight > 0)
                         {
-                            car.Dequeue();
-                            durationOfGreenLight -= passingCar.Length;
-                            counter++;
+                            greenLightLeft = durationOfGreenLight - car.Peek().Length;
                         }
                         else
                         {
-                            if (durationOfGreenLight > 0)
-                            {
-                                string damagedCar = passingCar;
-                                char hitIndex = damagedCar[durationOfGreenLight + durationOfFreeWindow];
-                                Console.WriteLine("A crash happened!");
-                                Console.WriteLine($"{damagedCar} was hit at {hitIndex}.");
-                                damageCount++;
-                            }
                             break;
                         }
+
+                        if (greenLightLeft >= 0)
+                        {
+                            counter++;
+                            car.Dequeue();
+                            if (car.Count > 0)
+                            {
+                                durationOfGreenLight = greenLightLeft;
+                            }
+                        }
+
+                        else
+                        {
+                            greenLightLeft = durationOfGreenLight - car.Peek().Length + durationOfFreeWindow;
+
+                            if (greenLightLeft >= 0)
+                            {
+                                counter++;
+                                durationOfGreenLight = -1;
+                                car.Dequeue();
+                            }
+                            else
+                            {
+                                string damagedCar = car.Peek();
+                                char hitIndex = damagedCar[durationOfGreenLight + durationOfFreeWindow];
+                                Console.WriteLine("A crash happened!");
+                                Console.WriteLine($"{damagedCar} was hit at {hitIndex}.");                                
+                                return;
+                            }
+                        }                       
                     }
                 }
-                durationOfGreenLight = saveGreenLight;
-                command = Console.ReadLine();
-            }
 
-            if (car.Count > 0 && damageCount == 0)
-            {
-                Console.WriteLine("Everyone is safe.");
-                Console.WriteLine($"{counter} total cars passed the crossroads.");
-            }
+                else
+                {
+                    car.Enqueue(command);
+                }
+               
+                command = Console.ReadLine();
+            }            
         }
     }
 }
