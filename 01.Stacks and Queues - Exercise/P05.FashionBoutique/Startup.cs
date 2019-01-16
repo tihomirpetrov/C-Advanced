@@ -11,24 +11,33 @@
             int[] clothesInTheBox = Console.ReadLine().Split().Select(int.Parse).ToArray();
             int capacity = int.Parse(Console.ReadLine());
             Stack<int> clothesPrice = new Stack<int>(clothesInTheBox.Reverse());
-            int box = 0;
-            int sum = 0;
+            int saveCapacity = capacity;
+            int box = 1;
 
-            for (int i = 0; i < clothesInTheBox.Length; i++)
+            while (clothesPrice.Count > 0)
             {
-                int clothes = clothesInTheBox[i];
-                if (capacity > clothes)
+                if (clothesPrice.Peek() < capacity)
                 {
-                    if (sum + clothes >= capacity)
+                    capacity -= clothesPrice.Pop();
+                }
+
+                else if (clothesPrice.Peek() == capacity)
+                {
+                    capacity -= clothesPrice.Pop();
+                    if (clothesPrice.Count > 0)
                     {
-                        sum += clothes - capacity;
                         box++;
+                        capacity = saveCapacity;
                     }
-                    sum += clothes;
-                    clothesPrice.Pop();
+                }
+
+                else
+                {
+                    box++;
+                    capacity = saveCapacity;
                 }
             }
-
+                      
             Console.WriteLine(box);
         }
     }
