@@ -18,9 +18,12 @@
 
                 if (command[0] == "Service")
                 {
-                    string servedCar = servedCars.Dequeue();
-                    carsServedAlready.Push(servedCar);
-                    Console.WriteLine($"Vehicle {servedCar} got served.");
+                    if (servedCars.Any())
+                    {
+                        string servedCar = servedCars.Dequeue();
+                        carsServedAlready.Push(servedCar);
+                        Console.WriteLine($"Vehicle {servedCar} got served.");
+                    }
                 }
                 else if (command[0] == "CarInfo")
                 {
@@ -36,16 +39,16 @@
                 }
                 else if (command[0] == "History")
                 {
-                    Console.WriteLine(string.Join(", ", carsServedAlready)); 
+                    Console.WriteLine(string.Join(", ", carsServedAlready));
                 }
                 command = Console.ReadLine().Split('-', StringSplitOptions.RemoveEmptyEntries).ToArray();
             }
 
             if (servedCars.Any())
             {
-                Console.WriteLine($"Vehicles for service: {string.Join(", ", servedCars)}");
-                Console.WriteLine($"Served vehicles: {string.Join(", ", carsServedAlready)}");
+                Console.WriteLine($"Vehicles for service: {string.Join(", ", servedCars)}");                
             }
+            Console.WriteLine($"Served vehicles: {string.Join(", ", carsServedAlready)}");
         }
     }
 }
