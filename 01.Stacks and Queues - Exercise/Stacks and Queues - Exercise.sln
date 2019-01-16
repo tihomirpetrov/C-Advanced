@@ -29,13 +29,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P09.SimpleTextEditor", "P09
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02.StackSum", "P02.StackSum\P02.StackSum.csproj", "{D239DAE6-F65F-4D55-ACCB-BB0658DD2531}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.MaximumAndMinimumElement", "P03.MaximumAndMinimumElement\P03.MaximumAndMinimumElement.csproj", "{8B1E3F83-FAA0-4457-8F20-40BCF5335EC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03.MaximumAndMinimumElement", "P03.MaximumAndMinimumElement\P03.MaximumAndMinimumElement.csproj", "{8B1E3F83-FAA0-4457-8F20-40BCF5335EC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04.FastFood", "P04.FastFood\P04.FastFood.csproj", "{89981111-A9CF-42AB-A970-F4B5CB2BB744}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04.FastFood", "P04.FastFood\P04.FastFood.csproj", "{89981111-A9CF-42AB-A970-F4B5CB2BB744}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05.FashionBoutique", "P05.FashionBoutique\P05.FashionBoutique.csproj", "{C7223FF5-396A-4B0B-B626-4DBD74F0E1FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05.FashionBoutique", "P05.FashionBoutique\P05.FashionBoutique.csproj", "{C7223FF5-396A-4B0B-B626-4DBD74F0E1FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06.AutoRepairAndService", "P06.AutoRepairAndService\P06.AutoRepairAndService.csproj", "{0DEB0D4F-4974-4257-AE7E-93A217B2CBB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06.AutoRepairAndService", "P06.AutoRepairAndService\P06.AutoRepairAndService.csproj", "{0DEB0D4F-4974-4257-AE7E-93A217B2CBB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P10.Crossroads", "P10.Crossroads\P10.Crossroads.csproj", "{FEA89095-4F98-4CCA-8CBE-99C293BA1794}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{0DEB0D4F-4974-4257-AE7E-93A217B2CBB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DEB0D4F-4974-4257-AE7E-93A217B2CBB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DEB0D4F-4974-4257-AE7E-93A217B2CBB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEA89095-4F98-4CCA-8CBE-99C293BA1794}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEA89095-4F98-4CCA-8CBE-99C293BA1794}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEA89095-4F98-4CCA-8CBE-99C293BA1794}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEA89095-4F98-4CCA-8CBE-99C293BA1794}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
