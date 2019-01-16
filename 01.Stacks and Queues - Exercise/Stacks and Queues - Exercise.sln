@@ -37,7 +37,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05.FashionBoutique", "P05.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06.AutoRepairAndService", "P06.AutoRepairAndService\P06.AutoRepairAndService.csproj", "{0DEB0D4F-4974-4257-AE7E-93A217B2CBB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P10.Crossroads", "P10.Crossroads\P10.Crossroads.csproj", "{FEA89095-4F98-4CCA-8CBE-99C293BA1794}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P10.Crossroads", "P10.Crossroads\P10.Crossroads.csproj", "{FEA89095-4F98-4CCA-8CBE-99C293BA1794}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P11.KeyRevolver", "P11.KeyRevolver\P11.KeyRevolver.csproj", "{A8A08518-521C-47DE-8765-9DB8C6B784BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{FEA89095-4F98-4CCA-8CBE-99C293BA1794}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEA89095-4F98-4CCA-8CBE-99C293BA1794}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEA89095-4F98-4CCA-8CBE-99C293BA1794}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8A08518-521C-47DE-8765-9DB8C6B784BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8A08518-521C-47DE-8765-9DB8C6B784BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8A08518-521C-47DE-8765-9DB8C6B784BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8A08518-521C-47DE-8765-9DB8C6B784BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
