@@ -19,7 +19,10 @@
 
             while (bulletsStack.Count > 0 || locksQueue.Count > 0)
             {
+                if (bulletsStack.Peek() )
+                {
 
+                }
             }
         }
     }
