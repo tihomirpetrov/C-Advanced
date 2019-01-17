@@ -16,6 +16,11 @@
             Stack<int> bulletsStack = new Stack<int>(bullets);
             Queue<int> locksQueue = new Queue<int>(locks);
 
+
+            while (bulletsStack.Count > 0 || locksQueue.Count > 0)
+            {
+
+            }
         }
     }
 }
