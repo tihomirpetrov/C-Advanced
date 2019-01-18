@@ -14,11 +14,8 @@
 
             for (int row = 0; row < rows; row++)
             {
-                //string[] colElements = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries).ToArray();
-
                 matrix[row] = new string[cols];
                 matrix[row] = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries).ToArray();
-
             }
 
             string[] command = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries).ToArray();
