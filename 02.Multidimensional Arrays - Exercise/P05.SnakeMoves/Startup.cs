@@ -27,7 +27,11 @@
                 }
             }
 
-            Console.WriteLine(string.Join(Environment.NewLine, matrix.Select(r => String.Join("", r))));
+            foreach (var item in matrix)
+            {
+                Console.WriteLine(string.Join("", item));
+            }
+            //Console.WriteLine(string.Join(Environment.NewLine, matrix.Select(r => String.Join("", r))));
         }
     }
 }
