@@ -34,10 +34,10 @@
             {
                 switch (command)
                 {
-                    case "up": playerRow = playerRow < 0 ? playerRow : playerRow - 1; break;
-                    case "down": playerRow = playerRow >= n ? playerRow : playerRow + 1; break;
-                    case "left": playerCol = playerCol < 0 ? playerCol : playerCol + 1; break;
-                    case "right": playerCol = playerCol >= n ? playerCol : playerCol + 1; break;
+                    case "up": playerRow = playerRow - 1< 0 ? playerRow : playerRow - 1; break;
+                    case "down": playerRow = playerRow + 1>= n ? playerRow : playerRow + 1; break;
+                    case "left": playerCol = playerCol - 1< 0 ? playerCol : playerCol + 1; break;
+                    case "right": playerCol = playerCol + 1 >= n ? playerCol : playerCol + 1; break;
                 }
 
                 if (matrix[playerRow][playerCol] == 'e')
@@ -59,10 +59,5 @@
 
             Console.WriteLine($"{coalLeft} coals left. ({playerRow}, {playerCol})");
         }
-
-        //private static bool IsInMatrix(int row, int col, int length)
-        //{
-        //    return row >= 0 && row < length && col >= 0 && col < length;
-        //}
     }
 }
