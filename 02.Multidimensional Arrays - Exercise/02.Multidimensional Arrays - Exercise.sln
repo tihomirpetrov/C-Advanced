@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04.MatrixShuffling", "P04.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05.SnakeMoves", "P05.SnakeMoves\P05.SnakeMoves.csproj", "{DBDE6D92-0AE6-4799-B4F1-04A5471C78C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06.BombTheBasement", "P06.BombTheBasement\P06.BombTheBasement.csproj", "{D4BA2B98-0E49-4E04-BF95-EA5F59ACE4B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06.BombTheBasement", "P06.BombTheBasement\P06.BombTheBasement.csproj", "{D4BA2B98-0E49-4E04-BF95-EA5F59ACE4B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07.KnightGame", "P07.KnightGame\P07.KnightGame.csproj", "{54070C9C-138E-4387-BD32-B3480FB0EA40}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{D4BA2B98-0E49-4E04-BF95-EA5F59ACE4B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4BA2B98-0E49-4E04-BF95-EA5F59ACE4B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4BA2B98-0E49-4E04-BF95-EA5F59ACE4B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54070C9C-138E-4387-BD32-B3480FB0EA40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54070C9C-138E-4387-BD32-B3480FB0EA40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54070C9C-138E-4387-BD32-B3480FB0EA40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54070C9C-138E-4387-BD32-B3480FB0EA40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
