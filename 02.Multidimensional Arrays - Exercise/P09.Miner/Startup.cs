@@ -49,13 +49,20 @@
                 {
                     matrix[playerRow][playerCol] = '*';
                     coalLeft--;
+
+                    if (coalLeft == 0)
+                    {
+                        Console.WriteLine($"You collected all coals! ({playerRow}, {playerCol})");
+                    }
                 }
             }
+
+            Console.WriteLine($"{coalLeft} coals left. ({playerRow}, {playerCol})");
         }
 
-        private static bool IsInMatrix(int row, int col, int length)
-        {
-            return row >= 0 && row < length && col >= 0 && col < length;
-        }
+        //private static bool IsInMatrix(int row, int col, int length)
+        //{
+        //    return row >= 0 && row < length && col >= 0 && col < length;
+        //}
     }
 }
