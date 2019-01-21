@@ -34,9 +34,9 @@
             {
                 switch (command)
                 {
-                    case "up": playerRow = playerRow - 1< 0 ? playerRow : playerRow - 1; break;
-                    case "down": playerRow = playerRow + 1>= n ? playerRow : playerRow + 1; break;
-                    case "left": playerCol = playerCol - 1< 0 ? playerCol : playerCol + 1; break;
+                    case "up": playerRow = playerRow - 1 < 0 ? playerRow : playerRow - 1; break;
+                    case "down": playerRow = playerRow + 1 >= n ? playerRow : playerRow + 1; break;
+                    case "left": playerCol = playerCol - 1 < 0 ? playerCol : playerCol + 1; break;
                     case "right": playerCol = playerCol + 1 >= n ? playerCol : playerCol + 1; break;
                 }
 
@@ -53,6 +53,7 @@
                     if (coalLeft == 0)
                     {
                         Console.WriteLine($"You collected all coals! ({playerRow}, {playerCol})");
+                        return;
                     }
                 }
             }
