@@ -20,6 +20,7 @@
                     numbers.Add(number, new List<int>());
                     counter++;
                 }
+
                 numbers[number].Add(counter);
             }
             foreach (var item in numbers)
