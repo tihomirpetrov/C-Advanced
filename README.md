@@ -1,7 +1,8 @@
 # C# Advanced
-C# Advanced - january 2018
+C# Advanced - january 2019
 
 01. Stacks and Queues - Lab
 01. Stacks and Queues - Exercise
 02. Multidimensional Arrays - Lab
 02. Multidimensional Arrays - Exercise
+03. Sets and Dictionaries Advanced - Lab
