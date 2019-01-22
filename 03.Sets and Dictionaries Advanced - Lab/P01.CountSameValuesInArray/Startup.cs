@@ -22,8 +22,6 @@
                 }
                 numbers[number].Add(counter);
             }
-
-
             foreach (var item in numbers)
             {
                 Console.WriteLine(string.Join(" ", $"{item.Key} - {item.Value.Count()} times"));
