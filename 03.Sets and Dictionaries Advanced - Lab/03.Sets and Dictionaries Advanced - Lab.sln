@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01.CountSameValuesInArray", "P01.CountSameValuesInArray\P01.CountSameValuesInArray.csproj", "{553FED1F-6F2E-493C-9F3D-6A620A662D4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01.CountSameValuesInArray", "P01.CountSameValuesInArray\P01.CountSameValuesInArray.csproj", "{553FED1F-6F2E-493C-9F3D-6A620A662D4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02.AverageStudentGrades", "P02.AverageStudentGrades\P02.AverageStudentGrades.csproj", "{AB6B32A6-F1EA-4B07-B5F8-B2D8C629D813}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02.AverageStudentGrades", "P02.AverageStudentGrades\P02.AverageStudentGrades.csproj", "{AB6B32A6-F1EA-4B07-B5F8-B2D8C629D813}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.ProductShop", "P03.ProductShop\P03.ProductShop.csproj", "{982343BE-26EF-4B23-9F31-03D155D9BB40}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{AB6B32A6-F1EA-4B07-B5F8-B2D8C629D813}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB6B32A6-F1EA-4B07-B5F8-B2D8C629D813}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB6B32A6-F1EA-4B07-B5F8-B2D8C629D813}.Release|Any CPU.Build.0 = Release|Any CPU
+		{982343BE-26EF-4B23-9F31-03D155D9BB40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{982343BE-26EF-4B23-9F31-03D155D9BB40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{982343BE-26EF-4B23-9F31-03D155D9BB40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{982343BE-26EF-4B23-9F31-03D155D9BB40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
