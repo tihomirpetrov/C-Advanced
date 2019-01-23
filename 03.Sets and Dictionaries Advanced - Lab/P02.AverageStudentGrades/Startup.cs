@@ -26,11 +26,13 @@
 
             foreach (var student in grades)
             {
+                Console.Write(string.Join(" ", $"{student.Key} -> "));
+
                 foreach (var grade in student.Value)
                 {
-                    Console.Write(string.Join(" ", student.Key));
-                    Console.WriteLine(string.Join(" ", $" -> {grade} ({student.Value.Average():f2})"));
+                    Console.Write(string.Join(" ", $"{grade:f2} "));
                 }
+                Console.WriteLine($"(avg: {student.Value.Average():f2})");
             }
         }
     }
