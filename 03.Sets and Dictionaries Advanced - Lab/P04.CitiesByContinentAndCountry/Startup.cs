@@ -25,7 +25,6 @@
                 if (!continentCountryCities[continent].ContainsKey(country))
                 {
                     continentCountryCities[continent].Add(country, new List<string>());
-
                 }
                 continentCountryCities[continent][country].Add(city);
             }
