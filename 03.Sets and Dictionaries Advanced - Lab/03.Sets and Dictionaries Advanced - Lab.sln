@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02.AverageStudentGrades", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03.ProductShop", "P03.ProductShop\P03.ProductShop.csproj", "{982343BE-26EF-4B23-9F31-03D155D9BB40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04.CitiesByContinentAndCountry", "P04.CitiesByContinentAndCountry\P04.CitiesByContinentAndCountry.csproj", "{99441E67-31A2-470C-8A5E-DAEB3E66C780}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04.CitiesByContinentAndCountry", "P04.CitiesByContinentAndCountry\P04.CitiesByContinentAndCountry.csproj", "{99441E67-31A2-470C-8A5E-DAEB3E66C780}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05.RecordUniqueNames", "P05.RecordUniqueNames\P05.RecordUniqueNames.csproj", "{964DBF64-9DED-436F-9047-1AB7C03809E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{99441E67-31A2-470C-8A5E-DAEB3E66C780}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99441E67-31A2-470C-8A5E-DAEB3E66C780}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99441E67-31A2-470C-8A5E-DAEB3E66C780}.Release|Any CPU.Build.0 = Release|Any CPU
+		{964DBF64-9DED-436F-9047-1AB7C03809E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{964DBF64-9DED-436F-9047-1AB7C03809E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{964DBF64-9DED-436F-9047-1AB7C03809E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{964DBF64-9DED-436F-9047-1AB7C03809E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
