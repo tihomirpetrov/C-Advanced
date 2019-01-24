@@ -35,12 +35,7 @@
                 foreach (var city in continent.Value)
                 {
                     Console.Write($"  {city.Key} -> ");
-                    foreach (var item in city.Value)
-                    {
-                        Console.Write(string.Join(", ", $"{item}"));
-                        Console.Write(", ");
-                    }
-                    Console.WriteLine();
+                    Console.WriteLine($"{ string.Join(", ", city.Value)}");                  
                 }
             }
         }
