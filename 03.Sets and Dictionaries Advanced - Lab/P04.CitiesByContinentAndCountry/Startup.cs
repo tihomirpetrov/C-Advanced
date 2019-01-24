@@ -9,9 +9,8 @@
         public static void Main()
         {
             int n = int.Parse(Console.ReadLine());
-            //string[] input = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries).ToArray();
-            Dictionary<string, Dictionary<string, string>> continentCountryCities = new Dictionary<string, Dictionary<string, string>>();
-            
+            Dictionary<string, Dictionary<string, List<string>>> continentCountryCities = new Dictionary<string, Dictionary<string, List<string>>>();
+
             for (int i = 0; i < n; i++)
             {
                 string[] input = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries).ToArray();
@@ -21,13 +20,14 @@
 
                 if (!continentCountryCities.ContainsKey(continent))
                 {
-                    continentCountryCities.Add(continent, new Dictionary<string, string>());
+                    continentCountryCities.Add(continent, new Dictionary<string, List<string>>());
                 }
                 if (!continentCountryCities[continent].ContainsKey(country))
                 {
-                    continentCountryCities[continent].Add(country, city);
+                    continentCountryCities[continent].Add(country, new List<string>());
+
                 }
-                continentCountryCities[continent][country] = city;
+                continentCountryCities[continent][country].Add(city);
             }
 
             foreach (var continent in continentCountryCities)
@@ -35,8 +35,13 @@
                 Console.WriteLine($"{continent.Key}:");
                 foreach (var city in continent.Value)
                 {
-                    Console.Write($"{city.Key} -> ");
-                    Console.WriteLine(string.Join(", ", $"{city.Value}"));
+                    Console.Write($"  {city.Key} -> ");
+                    foreach (var item in city.Value)
+                    {
+                        Console.Write(string.Join(", ", $"{item}"));
+                        Console.Write(", ");
+                    }
+                    Console.WriteLine();
                 }
             }
         }
