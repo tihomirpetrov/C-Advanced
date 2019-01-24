@@ -15,7 +15,6 @@
             {
                 int number = int.Parse(Console.ReadLine());
                 numbers.Add(number);
-
             }
 
             foreach (var number in numbers.Where(x => x % 2 != 0))
