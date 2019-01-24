@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05.RecordUniqueNames", "P0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06.ParkingLot", "P06.ParkingLot\P06.ParkingLot.csproj", "{1C949680-AAA4-4A00-AFAD-4635A2C8C224}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07.SoftUniParty", "P07.SoftUniParty\P07.SoftUniParty.csproj", "{BBEB42AB-D08C-4586-8369-09B410448250}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{1C949680-AAA4-4A00-AFAD-4635A2C8C224}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C949680-AAA4-4A00-AFAD-4635A2C8C224}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C949680-AAA4-4A00-AFAD-4635A2C8C224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBEB42AB-D08C-4586-8369-09B410448250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBEB42AB-D08C-4586-8369-09B410448250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBEB42AB-D08C-4586-8369-09B410448250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBEB42AB-D08C-4586-8369-09B410448250}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
