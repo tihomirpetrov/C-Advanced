@@ -55,9 +55,14 @@
             int count = vipGuests.Count + regularGuests.Count;
             Console.WriteLine(count);
 
-            Console.WriteLine($"{string.Join(Environment.NewLine, vipGuests)}");
-            Console.WriteLine($"{string.Join(Environment.NewLine, regularGuests)}");
-
+            foreach (var vip in vipGuests)
+            {
+                Console.WriteLine(vip);
+            }
+            foreach (var regular in regularGuests)
+            {
+                Console.WriteLine(regular);
+            }            
         }
     }
 }
