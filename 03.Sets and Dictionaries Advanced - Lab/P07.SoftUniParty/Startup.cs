@@ -13,12 +13,6 @@
             bool isParty = false;
             while (input != "END")
             {
-                if (input == "PARTY")
-                {
-                    isParty = true;
-                    input = Console.ReadLine();
-                }
-
                 if (input.Length == 8 && isParty == false)
                 {
                     if (input[0] == '1' || input[0] == '2' || input[0] == '3' || input[0] == '4' || input[0] == '5' || input[0] == '6' || input[0] == '7' || input[0] == '8' || input[0] == '9')
@@ -36,9 +30,9 @@
                         }
                     }
                 }
-                
-                else if(isParty)
-                {              
+
+                else if (isParty)
+                {
                     if (vipGuests.Contains(input))
                     {
                         vipGuests.Remove(input);
@@ -50,6 +44,11 @@
                 }
 
                 input = Console.ReadLine();
+                if (input == "PARTY")
+                {
+                    isParty = true;
+                    continue;                   
+                }
             }
 
             int count = vipGuests.Count + regularGuests.Count;
@@ -62,7 +61,7 @@
             foreach (var regular in regularGuests)
             {
                 Console.WriteLine(regular);
-            }            
+            }
         }
     }
 }
