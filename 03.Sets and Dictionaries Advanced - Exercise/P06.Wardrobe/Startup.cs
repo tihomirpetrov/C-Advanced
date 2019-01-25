@@ -9,7 +9,7 @@
         public static void Main()
         {
             int n = int.Parse(Console.ReadLine());
-            Dictionary<string, List<string>> colorClothes = new Dictionary<string, List<string>>();
+            Dictionary<string, Dictionary<string, int>> colorClothes = new Dictionary<string, Dictionary<string, int>>();
 
             for (int i = 0; i < n; i++)
             {
@@ -19,26 +19,41 @@
 
                 if (!colorClothes.ContainsKey(color))
                 {
-                    colorClothes.Add(color, new List<string>());
+                    colorClothes.Add(color, new Dictionary<string, int>());
                 }
+
+
                 for (int j = 0; j < clothes.Length; j++)
                 {
-                    colorClothes[color].Add(clothes[j]);
+                    //int counter = 1;
+                    if (!colorClothes[color].ContainsKey(clothes[j]))
+                    {
+                        colorClothes[color][clothes[j]]= 1;
+                    }
+                    else if(colorClothes[color].ContainsKey(clothes[j]))
+                    {
+                        colorClothes[color][clothes[j]]++;
+                    }
                 }
             }
             string[] colorItem = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries).ToArray();
             string clothingColor = colorItem[0];
             string clothingItem = colorItem[1];
 
-            if (colorClothes.ContainsKey(clothingColor))
-            {
-                Console.WriteLine($"{clothingColor} clothes:");
-            }
             foreach (var clothe in colorClothes)
             {
+                Console.WriteLine($"{clothe.Key} clothes:");
+
                 foreach (var item in clothe.Value)
                 {
-                    Console.WriteLine($"* {item} - {clothe.Value.Count}");
+                    if (item.Key == clothingColor && item.Value == clothingItem)
+                    {
+                        Console.WriteLine($"* {item.Key} - {item.Value}");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"* {item.Key} - {item.Value} (found!)");                       
+                    }
                 }
             }
         }
