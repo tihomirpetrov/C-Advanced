@@ -22,15 +22,13 @@
                     colorClothes.Add(color, new Dictionary<string, int>());
                 }
 
-
                 for (int j = 0; j < clothes.Length; j++)
                 {
-                    //int counter = 1;
                     if (!colorClothes[color].ContainsKey(clothes[j]))
                     {
-                        colorClothes[color][clothes[j]]= 1;
+                        colorClothes[color][clothes[j]] = 1;
                     }
-                    else if(colorClothes[color].ContainsKey(clothes[j]))
+                    else if (colorClothes[color].ContainsKey(clothes[j]))
                     {
                         colorClothes[color][clothes[j]]++;
                     }
@@ -46,13 +44,13 @@
 
                 foreach (var item in clothe.Value)
                 {
-                    if (item.Key == clothingColor && item.Value == clothingItem)
+                    if (clothe.Key == clothingColor && item.Key == clothingItem)
                     {
-                        Console.WriteLine($"* {item.Key} - {item.Value}");
+                        Console.WriteLine($"* {item.Key} - {item.Value} (found!)");
                     }
                     else
                     {
-                        Console.WriteLine($"* {item.Key} - {item.Value} (found!)");                       
+                        Console.WriteLine($"* {item.Key} - {item.Value}");
                     }
                 }
             }
