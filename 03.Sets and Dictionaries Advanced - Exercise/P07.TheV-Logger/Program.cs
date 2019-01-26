@@ -8,60 +8,84 @@
     {
         public static void Main()
         {
-            string[] input = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries).ToArray();
-            Dictionary<string, int> vloggersJoin = new Dictionary<string, int>();
-            Dictionary<string, int> vloggersFollow = new Dictionary<string, int>();
+            Dictionary<string, HashSet<string>> vloggersFollow = new Dictionary<string, HashSet<string>>();
 
-            while (input[0] != "Statistics")
+            while (true)
             {
-                string vloggerName = input[0];
-                string action = input[1];
+                string input = Console.ReadLine();
 
-                if (action == "joined")
+                if (input == "Statistics")
                 {
-                    if (!vloggersJoin.ContainsKey(vloggerName))
-                    {
-                        vloggersJoin.Add(vloggerName, 0);
-                        vloggersJoin[vloggerName]++;
-                    }
-
-
+                    break;
                 }
-                else if (action == "followed")
+
+                string[] line = input.Split(" ", StringSplitOptions.RemoveEmptyEntries);
+                string command = line[1];
+                string name = line[0];
+
+                switch (command )
                 {
-                    if (vloggersJoin.ContainsKey(vloggerName))
-                    {
-                        if (!vloggersFollow.ContainsKey(vloggerName))
+                    case "joined":
+                        if (!vloggersFollow.ContainsKey(name))
                         {
-                            vloggersFollow.Add(vloggerName, 0);
+                            vloggersFollow[name] = new HashSet<string>();
                         }
-                        vloggersFollow[vloggerName]++;
-                    }
-
+                        break;
+                    case "followed":
+                        string name2 = line[2];
+                        if (vloggersFollow.ContainsKey(name) && vloggersFollow.ContainsKey(name2) && name != name2)
+                        {
+                            vloggersFollow[name2].Add(name);
+                        }
+                        break;
                 }
-
-                input = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries).ToArray();
             }
 
-            Console.WriteLine($"The V-Logger has a total of {vloggersJoin.Count} vloggers in its logs.");
-            foreach (var user in vloggersJoin)
+            Dictionary<string, List<int>> nameFollowedFollowing = new Dictionary<string, List<int>>();
+            foreach (var kvp in vloggersFollow)
             {
-                Console.WriteLine($"{user.Value}. {user.Key} : {user.Value} followers, {vloggersJoin.Count} following");
-
-                foreach (var item in vloggersFollow.Keys)
-                {
-                    if (user.Key == item)
-                    {
-                        Console.WriteLine($"* {user.Key}");
-                    }
-                }
-               
+                nameFollowedFollowing[kvp.Key] = new List<int> { 0, 0 };
+                nameFollowedFollowing[kvp.Key][0] = kvp.Value.Count;
             }
 
-            //foreach (var user in vloggersFollow)
-            //{
-            //    Console.WriteLine($"{user.Key} - {user.Value}");
-            //}
+            foreach (var kvp in nameFollowedFollowing)
+            {
+                int counter = 0;
+                foreach (var kvp1 in vloggersFollow)
+                {
+                    foreach (var item in kvp1.Value)
+                    {
+                        if (kvp.Key == item)
+                        {
+                            counter++;
+                        }
+                    }
+                }
+
+                nameFollowedFollowing[kvp.Key][1] = counter;
+            }
+
+            Console.WriteLine($"The V-Logger has a total of {nameFollowedFollowing.Keys.Count()} vloggers in its logs.");
+            int count = 1;
+            foreach (var kvp in nameFollowedFollowing.OrderByDescending(x => x.Value[0]).ThenBy(x => x.Value[1]))
+            {
+                Console.WriteLine($"{count}. {kvp.Key} : {kvp.Value[0]} followers, {kvp.Value[1]} following");
+                if (count == 1)
+                {
+                    foreach (var kvp1 in vloggersFollow)
+                    {
+                        if (kvp.Key == kvp1.Key)
+                        {
+                            foreach (var item in kvp1.Value.OrderBy(x => x))
+                            {
+                                Console.WriteLine($"*  {item}");
+                            }
+                        }
+                    }
+                }
+
+                count++;
+            }
         }
     }
 }
