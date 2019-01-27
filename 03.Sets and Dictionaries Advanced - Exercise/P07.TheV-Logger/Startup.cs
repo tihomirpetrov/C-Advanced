@@ -3,8 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-
-    class Program
+    class Startup
     {
         public static void Main()
         {
@@ -23,7 +22,7 @@
                 string command = line[1];
                 string name = line[0];
 
-                switch (command )
+                switch (command)
                 {
                     case "joined":
                         if (!vloggersFollow.ContainsKey(name))
@@ -83,7 +82,6 @@
                         }
                     }
                 }
-
                 count++;
             }
         }
