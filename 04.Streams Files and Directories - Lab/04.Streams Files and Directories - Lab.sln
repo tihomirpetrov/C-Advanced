@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01.OddLines", "P01.OddLines\P01.OddLines.csproj", "{FDA4FE32-DA05-4EF6-AD26-EBC6BACACE8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01.OddLines", "P01.OddLines\P01.OddLines.csproj", "{FDA4FE32-DA05-4EF6-AD26-EBC6BACACE8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02.LineNumbers", "P02.LineNumbers\P02.LineNumbers.csproj", "{DC6F12B3-D680-42F3-9422-BA52E4A542A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.WordCount", "P03.WordCount\P03.WordCount.csproj", "{B44B4FF3-8CCB-432F-B6D9-0F4E6DB91D93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{FDA4FE32-DA05-4EF6-AD26-EBC6BACACE8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDA4FE32-DA05-4EF6-AD26-EBC6BACACE8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDA4FE32-DA05-4EF6-AD26-EBC6BACACE8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC6F12B3-D680-42F3-9422-BA52E4A542A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC6F12B3-D680-42F3-9422-BA52E4A542A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC6F12B3-D680-42F3-9422-BA52E4A542A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC6F12B3-D680-42F3-9422-BA52E4A542A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B44B4FF3-8CCB-432F-B6D9-0F4E6DB91D93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B44B4FF3-8CCB-432F-B6D9-0F4E6DB91D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B44B4FF3-8CCB-432F-B6D9-0F4E6DB91D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B44B4FF3-8CCB-432F-B6D9-0F4E6DB91D93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
