@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02.LineNumbers", "P02.Line
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.WordCount", "P03.WordCount\P03.WordCount.csproj", "{BA6A91F0-CE45-43C8-9478-76D4F6086CD7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04.CopyBinaryFile", "P04.CopyBinaryFile\P04.CopyBinaryFile.csproj", "{628DFCC6-33F6-4215-90A3-5F7F956A20F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BA6A91F0-CE45-43C8-9478-76D4F6086CD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA6A91F0-CE45-43C8-9478-76D4F6086CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA6A91F0-CE45-43C8-9478-76D4F6086CD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{628DFCC6-33F6-4215-90A3-5F7F956A20F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{628DFCC6-33F6-4215-90A3-5F7F956A20F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{628DFCC6-33F6-4215-90A3-5F7F956A20F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{628DFCC6-33F6-4215-90A3-5F7F956A20F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

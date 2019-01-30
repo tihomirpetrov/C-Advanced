@@ -30,7 +30,7 @@
             {
                 if (!wordsCount.ContainsKey(word))
                 {
-                    wordsCount[word] = 0;
+                    wordsCount[word] = 1;
                 }
             }
 
@@ -87,6 +87,15 @@
                 if (isSame)
                 {
                     Console.WriteLine(true);
+                }
+            }
+
+            using (StreamWriter writer = new StreamWriter(@"..\..\..\actualResult.txt"))
+            {
+                foreach (var kvp in sortedDictionary)
+                {
+                    string output = $"{kvp.Key} - {kvp.Value}";
+                    writer.WriteLine(output);
                 }
             }
         }
