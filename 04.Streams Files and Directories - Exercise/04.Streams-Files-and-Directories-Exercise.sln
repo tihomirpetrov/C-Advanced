@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.WordCount", "P03.WordCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04.CopyBinaryFile", "P04.CopyBinaryFile\P04.CopyBinaryFile.csproj", "{628DFCC6-33F6-4215-90A3-5F7F956A20F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05.DirectoryTraversal", "P05.DirectoryTraversal\P05.DirectoryTraversal.csproj", "{63997E0F-169B-4073-B04E-B6BE753EB3FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06.FullDirectoryTraversal", "P06.FullDirectoryTraversal\P06.FullDirectoryTraversal.csproj", "{C406616E-9B98-47DB-B52B-2C234706C618}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{628DFCC6-33F6-4215-90A3-5F7F956A20F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{628DFCC6-33F6-4215-90A3-5F7F956A20F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{628DFCC6-33F6-4215-90A3-5F7F956A20F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63997E0F-169B-4073-B04E-B6BE753EB3FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63997E0F-169B-4073-B04E-B6BE753EB3FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63997E0F-169B-4073-B04E-B6BE753EB3FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63997E0F-169B-4073-B04E-B6BE753EB3FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C406616E-9B98-47DB-B52B-2C234706C618}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C406616E-9B98-47DB-B52B-2C234706C618}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C406616E-9B98-47DB-B52B-2C234706C618}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C406616E-9B98-47DB-B52B-2C234706C618}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
