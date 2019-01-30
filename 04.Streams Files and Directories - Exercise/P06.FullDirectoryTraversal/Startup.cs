@@ -26,23 +26,26 @@
                 extensionFileInfo[info.Extension].Add(info);
             }
 
-            string pathToDesktop = "";
+            string pathToDesktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
 
-            using (FileStream writer = new FileStream(" ", FileMode.Create))
+            using (StreamWriter writer = new StreamWriter(pathToDesktop))
             {
 
-            }
-
-            foreach (var kvp in extensionFileInfo)
-            {
-                string ext = kvp.Key;
-                var info = kvp.Value;
-
-                foreach (var fileInfo in info)
+                foreach (var kvp in extensionFileInfo)
                 {
-                    string name = fileInfo.Name;
-                    double size = fileInfo.Length / 1024;
+                    string ext = kvp.Key;
+                    var info = kvp.Value;
+                    writer.WriteLine(ext);
+
+                    foreach (var fileInfo in info)
+                    {
+                        string name = fileInfo.Name;
+                        double size = fileInfo.Length / 1024;
+
+                        writer.WriteLine($"--{name} - {size:f3}");
+                    }
                 }
             }
+
         }
     }
