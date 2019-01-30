@@ -27,18 +27,17 @@
                 extensionFileInfo[info.Extension].Add(info);
             }
 
-            string pathToDesktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            string pathToDesktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\Report.txt";
 
             using (StreamWriter writer = new StreamWriter(pathToDesktop))
             {
-
-                foreach (var kvp in extensionFileInfo.OrderBy(x =>x.Value.Count).ThenBy(x =>x.Key))
+                foreach (var kvp in extensionFileInfo.OrderBy(x => x.Value.Count).ThenBy(x => x.Key))
                 {
                     string ext = kvp.Key;
                     var info = kvp.Value;
                     writer.WriteLine(ext);
 
-                    foreach (var fileInfo in info)
+                    foreach (var fileInfo in info.OrderByDescending(x => x.Length))
                     {
                         string name = fileInfo.Name;
                         double size = fileInfo.Length / 1024;
