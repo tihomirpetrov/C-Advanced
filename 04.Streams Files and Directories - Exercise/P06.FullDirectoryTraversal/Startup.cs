@@ -40,7 +40,7 @@
                     foreach (var fileInfo in info.OrderByDescending(x => x.Length))
                     {
                         string name = fileInfo.Name;
-                        double size = fileInfo.Length / 1024;
+                        double size = fileInfo.Length * 1.0 / 1024 * 1.0;
 
                         writer.WriteLine($"--{name} - {size:f3}");
                     }

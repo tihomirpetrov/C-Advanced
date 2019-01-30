@@ -1,0 +1,8 @@
+.dll
+--P05.DirectoryTraversal.dll - 6.500
+.pdb
+--P05.DirectoryTraversal.pdb - 1.215
+.json
+--P05.DirectoryTraversal.deps.json - 0.486
+--P05.DirectoryTraversal.runtimeconfig.dev.json - 0.230
+--P05.DirectoryTraversal.runtimeconfig.json - 0.150

@@ -5,15 +5,15 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01.EvenLines", "P01.EvenLines\P01.EvenLines.csproj", "{06DFA8E0-637F-4339-A7E0-6D2952AFF586}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02.LineNumbers", "P02.LineNumbers\P02.LineNumbers.csproj", "{2B85EC1E-E74B-4DCA-909A-5B8D48355AEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02.LineNumbers", "P02.LineNumbers\P02.LineNumbers.csproj", "{2B85EC1E-E74B-4DCA-909A-5B8D48355AEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.WordCount", "P03.WordCount\P03.WordCount.csproj", "{BA6A91F0-CE45-43C8-9478-76D4F6086CD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03.WordCount", "P03.WordCount\P03.WordCount.csproj", "{BA6A91F0-CE45-43C8-9478-76D4F6086CD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04.CopyBinaryFile", "P04.CopyBinaryFile\P04.CopyBinaryFile.csproj", "{628DFCC6-33F6-4215-90A3-5F7F956A20F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04.CopyBinaryFile", "P04.CopyBinaryFile\P04.CopyBinaryFile.csproj", "{628DFCC6-33F6-4215-90A3-5F7F956A20F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05.DirectoryTraversal", "P05.DirectoryTraversal\P05.DirectoryTraversal.csproj", "{63997E0F-169B-4073-B04E-B6BE753EB3FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05.DirectoryTraversal", "P05.DirectoryTraversal\P05.DirectoryTraversal.csproj", "{63997E0F-169B-4073-B04E-B6BE753EB3FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06.FullDirectoryTraversal", "P06.FullDirectoryTraversal\P06.FullDirectoryTraversal.csproj", "{C406616E-9B98-47DB-B52B-2C234706C618}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06.FullDirectoryTraversal", "P06.FullDirectoryTraversal\P06.FullDirectoryTraversal.csproj", "{C406616E-9B98-47DB-B52B-2C234706C618}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
