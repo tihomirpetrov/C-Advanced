@@ -17,7 +17,7 @@
 
                 while (line != null)
                 {
-                    string[] splittedLine = line.ToLower().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(x =>x.ToLower()).ToArray();
+                    string[] splittedLine = line.ToLower().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(x => x.ToLower()).ToArray();
                     words.AddRange(splittedLine);
 
                     line = wordReader.ReadLine();
@@ -54,7 +54,7 @@
 
                     foreach (var word in splittedLine)
                     {
-                        if (!wordsCount.ContainsKey(word))
+                        if (wordsCount.ContainsKey(word))
                         {
                             wordsCount[word]++;
                         }
@@ -70,7 +70,24 @@
 
             using (StreamReader readerResult = new StreamReader(@"..\..\..\expectedResult.txt"))
             {
+                bool isSame = true;
 
+                foreach (var kvp in sortedDictionary)
+                {
+                    string output = $"{kvp.Key} - {kvp.Value}";
+                    string line = readerResult.ReadLine();
+
+                    if (output != line)
+                    {
+                        isSame = false;
+                        break;
+                    }
+                }
+
+                if (isSame)
+                {
+                    Console.WriteLine(true);
+                }
             }
         }
     }
