@@ -4,44 +4,77 @@
     using System.Collections.Generic;
     using System.IO;
     using System.Linq;
+    using System.Text.RegularExpressions;
 
     public class Startup
     {
         public static void Main()
         {
-            Dictionary<string, int> wordCount = new Dictionary<string, int>();
-            string allWords = @"..\..\..\Resources\03. Word Count\words.txt";
-            string[] words = allWords.Split(' ', StringSplitOptions.RemoveEmptyEntries).ToArray();
+            List<string> words = new List<string>();
 
-            using (StreamReader reader = new StreamReader(@"..\..\..\Resources\03. Word Count\text.txt"))
+            using (StreamReader wordReader = new StreamReader(@"..\..\..\words.txt"))
             {
-                string currentLine = reader.ReadLine();
+                string line = wordReader.ReadLine();
 
-                while (true)
+                while (line != null)
                 {
-                    if (currentLine == null)
-                    {
-                        break;
-                    }
+                    string[] splittedLine = line.ToLower().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(x => x.ToLower()).ToArray();
+                    words.AddRange(splittedLine);
 
-                    for (int i = 0; i < words.Length; i++)
-                    {
-                        if (!wordCount.ContainsKey(words[i]))
-                        {
-                            wordCount.Add(words[i], 1);
-                        }
-
-                        else
-                        {
-                            wordCount[words[i]]++;
-                        }                        
-                    }
-                    currentLine = reader.ReadLine();
+                    line = wordReader.ReadLine();
                 }
+            }
 
-                foreach (var item in wordCount.OrderByDescending(key => key.Value))
+            Dictionary<string, int> wordsCount = new Dictionary<string, int>();
+
+            foreach (var word in words)
+            {
+                if (!wordsCount.ContainsKey(word))
                 {
-                    Console.WriteLine($"{item.Key} - {item.Value}");
+                    wordsCount[word] = 1;
+                }
+            }
+
+            using (StreamReader reader = new StreamReader(@"..\..\..\text.txt"))
+            {
+                string line = reader.ReadLine();
+
+                while (line != null)
+                {
+                    string symbols = " ";
+
+                    foreach (var @char in line)
+                    {
+                        if (char.IsPunctuation(@char) && @char != '\'')
+                        {
+                            symbols += @char;
+                        }
+                    }
+
+                    string[] splittedLine = line.ToLower().Split(" ", StringSplitOptions.RemoveEmptyEntries);
+
+                    foreach (var word in splittedLine)
+                    {
+                        if (wordsCount.ContainsKey(word))
+                        {
+                            wordsCount[word]++;
+                        }
+                    }
+
+                    words.AddRange(splittedLine);
+
+                    line = reader.ReadLine();
+                }
+            }
+
+            var sortedDictionary = wordsCount.OrderByDescending(x => x.Value).ToDictionary(x => x.Key, x => x.Value);
+
+            using (StreamWriter writer = new StreamWriter(@"..\..\..\result.txt"))
+            {
+                foreach (var kvp in sortedDictionary)
+                {
+                    string output = $"{kvp.Key} - {kvp.Value}";
+                    writer.WriteLine(output);
                 }
             }
         }
