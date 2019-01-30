@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.IO;
+    using System.Linq;
 
     class Startup
     {
@@ -31,7 +32,7 @@
             using (StreamWriter writer = new StreamWriter(pathToDesktop))
             {
 
-                foreach (var kvp in extensionFileInfo)
+                foreach (var kvp in extensionFileInfo.OrderBy(x =>x.Value.Count).ThenBy(x =>x.Key))
                 {
                     string ext = kvp.Key;
                     var info = kvp.Value;
@@ -46,6 +47,6 @@
                     }
                 }
             }
-
         }
     }
+}
