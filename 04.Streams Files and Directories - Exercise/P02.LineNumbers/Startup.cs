@@ -20,6 +20,11 @@
                         int lettersCount = 0;
                         int symbolsCount = 0;
 
+                        if (counter != 1)
+                        {
+                            writer.WriteLine();
+                        }
+
                         foreach (var @char in line)
                         {
                             if (char.IsLetter(@char))
@@ -32,7 +37,7 @@
                             }
                         }
 
-                        writer.WriteLine($"Line {counter}: {line} ({lettersCount})({symbolsCount})");
+                        writer.Write($"Line {counter}: {line} ({lettersCount})({symbolsCount})");
                         counter++;
                         line = reader.ReadLine();
                     }
