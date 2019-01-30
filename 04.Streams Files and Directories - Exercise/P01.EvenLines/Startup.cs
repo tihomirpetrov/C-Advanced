@@ -21,9 +21,13 @@
 
                     while (line != null)
                     {
-
                         if (counter % 2 == 0)
                         {
+                            if (counter != 0)
+                            {
+                                writer.WriteLine();
+                            }
+
                             string changedLine = string.Empty;
 
                             foreach (var @char in line)
@@ -42,7 +46,7 @@
 
                             Array.Reverse(splittedLine);
 
-                            writer.WriteLine(string.Join(" ", splittedLine));
+                            writer.Write(string.Join(" ", splittedLine));
                         }
 
                         counter++;
