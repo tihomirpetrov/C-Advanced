@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01.SortEvenNumbers", "P01.SortEvenNumbers\P01.SortEvenNumbers.csproj", "{CE61ED0E-B2AC-4B40-9023-C0E11339F9CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02.SumNumbers", "P02.SumNumbers\P02.SumNumbers.csproj", "{D926CE3B-E883-4B7D-9CE2-540CCE71072A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.CountUppercaseWords", "P03.CountUppercaseWords\P03.CountUppercaseWords.csproj", "{23312BCC-D85F-466C-AFDB-5EC9EA716F67}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{CE61ED0E-B2AC-4B40-9023-C0E11339F9CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE61ED0E-B2AC-4B40-9023-C0E11339F9CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE61ED0E-B2AC-4B40-9023-C0E11339F9CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D926CE3B-E883-4B7D-9CE2-540CCE71072A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D926CE3B-E883-4B7D-9CE2-540CCE71072A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D926CE3B-E883-4B7D-9CE2-540CCE71072A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D926CE3B-E883-4B7D-9CE2-540CCE71072A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23312BCC-D85F-466C-AFDB-5EC9EA716F67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23312BCC-D85F-466C-AFDB-5EC9EA716F67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23312BCC-D85F-466C-AFDB-5EC9EA716F67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23312BCC-D85F-466C-AFDB-5EC9EA716F67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
