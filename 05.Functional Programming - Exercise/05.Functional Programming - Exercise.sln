@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01.ActionPrint", "P01.ActionPrint\P01.ActionPrint.csproj", "{7E7621B9-A7AE-44F4-917B-8E38E71489D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02.KnightsOfHonor", "P02.KnightsOfHonor\P02.KnightsOfHonor.csproj", "{37958076-19DD-4F59-9C20-EE9E239F2F1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.CustomMinFunction", "P03.CustomMinFunction\P03.CustomMinFunction.csproj", "{FC905795-D0D1-41C6-9341-0717A298BB3F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{7E7621B9-A7AE-44F4-917B-8E38E71489D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E7621B9-A7AE-44F4-917B-8E38E71489D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E7621B9-A7AE-44F4-917B-8E38E71489D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37958076-19DD-4F59-9C20-EE9E239F2F1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37958076-19DD-4F59-9C20-EE9E239F2F1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37958076-19DD-4F59-9C20-EE9E239F2F1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37958076-19DD-4F59-9C20-EE9E239F2F1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC905795-D0D1-41C6-9341-0717A298BB3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC905795-D0D1-41C6-9341-0717A298BB3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC905795-D0D1-41C6-9341-0717A298BB3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC905795-D0D1-41C6-9341-0717A298BB3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
