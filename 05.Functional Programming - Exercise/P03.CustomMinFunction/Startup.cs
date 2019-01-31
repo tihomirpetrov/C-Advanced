@@ -2,16 +2,13 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
 
     class Startup
     {
         public static void Main()
         {
-            HashSet<int> numbers = new HashSet<int>();
-
-            Console.ReadLine();
-
-            Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(x => int.Parse(x <= x).ToList().ForEach(x => Console.WriteLine(x));
+            Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).Where(x => x == x.Min()).ToList().ForEach(x => Console.WriteLine(x));
         }
     }
 }
