@@ -1,7 +1,6 @@
 ﻿namespace P06.ReverseAndExclude
 {
     using System;
-    using System.Collections.Generic;
     using System.Linq;
 
     class Startup
