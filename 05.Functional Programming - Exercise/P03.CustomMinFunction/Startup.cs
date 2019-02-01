@@ -8,7 +8,28 @@
     {
         public static void Main()
         {
-            Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).Where(x => x == x.Min()).ToList().ForEach(x => Console.WriteLine(x));
+            int[] numbers = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
+
+            Func<int[], int> minFunc = GetMin;
+
+            var minNumber = minFunc(numbers);
+
+            Console.WriteLine(minNumber);
+        }
+
+        public static int GetMin(int[] numbers)
+        {
+            var min = int.MaxValue;
+
+            foreach (var number in numbers)
+            {
+                if (number < min)
+                {
+                    min = number;
+                }
+            }
+
+            return min;
         }
     }
 }
