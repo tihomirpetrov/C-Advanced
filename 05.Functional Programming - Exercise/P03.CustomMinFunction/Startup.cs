@@ -3,7 +3,7 @@
     using System;
     using System.Linq;
 
-    class Startup
+    public class Startup
     {
         public static void Main()
         {
