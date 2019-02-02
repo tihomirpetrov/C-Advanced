@@ -11,3 +11,4 @@ C# Advanced - january 2019
 04. Streams Files and Directories - Exercise
 05. Functional Programming - Lab
 05. Functional Programming - Exercise
+06. Defining Classes - Lab
