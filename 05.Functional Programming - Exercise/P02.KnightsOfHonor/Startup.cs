@@ -8,6 +8,7 @@
         public static void Main()
         {
             Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).ToList().ForEach(x => Console.WriteLine($"Sir {x}"));
+
         }
     }
 }
