@@ -55,6 +55,7 @@
         }
 
         public Car(string make, string model, int year)
+            : this()
         {
             this.Make = make;
             this.Model = model;
@@ -62,6 +63,7 @@
         }
 
         public Car(string make, string model, int year, double fuelQuantity, double fuelConsumption)
+            : this(make, model, year)
         {
             this.FuelQuantity = fuelQuantity;
             this.FuelConsumption = fuelConsumption;
