@@ -48,7 +48,7 @@ namespace CarManufacturer
 
         public void Drive(double distance)
         {
-            var consumedFuel = distance * (this.fuelConsumption / 100);
+            double consumedFuel = distance * (this.fuelConsumption / 100);
 
             if (this.fuelQuantity - consumedFuel < 0)
             {
