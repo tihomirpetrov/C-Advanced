@@ -5,13 +5,13 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01.Car", "P01.Car\P01.Car.csproj", "{FF29927B-6362-41C3-8A40-7113E5425C39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02.CarExtension", "P02.CarExtension\P02.CarExtension.csproj", "{B35B8D08-90F2-4669-9ED0-228AB6FDD190}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02.CarExtension", "P02.CarExtension\P02.CarExtension.csproj", "{B35B8D08-90F2-4669-9ED0-228AB6FDD190}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.CarConstructors", "P03.CarConstructors\P03.CarConstructors.csproj", "{351A1748-BA8C-4F7D-9BAE-EC55FB07FA4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03.CarConstructors", "P03.CarConstructors\P03.CarConstructors.csproj", "{351A1748-BA8C-4F7D-9BAE-EC55FB07FA4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04.CarEngineAndTires", "P04.CarEngineAndTires\P04.CarEngineAndTires.csproj", "{44183255-BBF5-4F41-8AA0-B398551115EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04.CarEngineAndTires", "P04.CarEngineAndTires\P04.CarEngineAndTires.csproj", "{44183255-BBF5-4F41-8AA0-B398551115EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05.SpecialCars", "P05.SpecialCars\P05.SpecialCars.csproj", "{E222B3FE-330C-499A-AA4C-F833A0D09017}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05.SpecialCars", "P05.SpecialCars\P05.SpecialCars.csproj", "{E222B3FE-330C-499A-AA4C-F833A0D09017}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

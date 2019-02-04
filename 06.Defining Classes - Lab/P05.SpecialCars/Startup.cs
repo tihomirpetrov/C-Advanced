@@ -57,8 +57,26 @@
                 int engineIndex = int.Parse(tokens[5]);
                 int tiresIndex = int.Parse(tokens[6]);
 
+                Car car = new Car(make, model, year, fuelQuantity, fuelConsumption, engines[engineIndex], tires[tiresIndex]);
+                cars.Add(car);
 
                 input = Console.ReadLine();
+            }
+
+            List<Car> filteredCars = cars.FindAll(x => x.Year >= 2017 && x.Engine.HorsePower > 330 && x.Tires.Select(y => y.Pressure).Sum() > 9 && x.Tires.Select(y => y.Pressure).Sum() < 10).ToList();
+
+            for (int i = 0; i < filteredCars.Count; i++)
+            {
+                filteredCars[i].Drive(20);
+            }
+
+            foreach (var specialCar in filteredCars)
+            {
+                Console.WriteLine($"Make: {specialCar.Make}");
+                Console.WriteLine($"Model: {specialCar.Model}");
+                Console.WriteLine($"Year: {specialCar.Year}");
+                Console.WriteLine($"HorsePowers: {specialCar.Engine.HorsePower}");
+                Console.WriteLine($"FuelQuantity: {specialCar.FuelQuantity}");
             }
         }
     }
