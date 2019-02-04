@@ -5,23 +5,15 @@
     {
         public static void Main()
         {
-            Person firstPerson = new Person();
-            {
-                firstPerson.Name = "Pesho";
-                firstPerson.Age = 20;
-            };
+            Person firstPerson = new Person("Pesho", 20);
+            
+            Person secondPerson = new Person("Gosho", 18);
+            
+            Person thirdPerson = new Person("Stamat", 43);
 
-            Person secondPerson = new Person();
-            {
-                secondPerson.Name = "Gosho";
-                secondPerson.Age = 18;
-            }
-
-            Person thirdPerson = new Person();
-            {
-                thirdPerson.Name = "Stamat";
-                thirdPerson.Age = 43;
-            }
+            Console.WriteLine($"{firstPerson.Name} {firstPerson.Age}");
+            Console.WriteLine($"{secondPerson.Name} {secondPerson.Age}");
+            Console.WriteLine($"{thirdPerson.Name} {thirdPerson.Age}");                       
         }
     }
 }
