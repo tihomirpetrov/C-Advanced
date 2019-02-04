@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01.DefineAClassPerson", "P01.DefineAClassPerson\P01.DefineAClassPerson.csproj", "{3F40C6D9-0EF4-47CF-A337-3B10AD93CF47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01.DefineAClassPerson", "P01.DefineAClassPerson\P01.DefineAClassPerson.csproj", "{3F40C6D9-0EF4-47CF-A337-3B10AD93CF47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02.CreatingConstructors", "P02.CreatingConstructors\P02.CreatingConstructors.csproj", "{9903CF05-D0B9-465C-A89D-83C6545D43D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3F40C6D9-0EF4-47CF-A337-3B10AD93CF47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F40C6D9-0EF4-47CF-A337-3B10AD93CF47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F40C6D9-0EF4-47CF-A337-3B10AD93CF47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9903CF05-D0B9-465C-A89D-83C6545D43D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9903CF05-D0B9-465C-A89D-83C6545D43D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9903CF05-D0B9-465C-A89D-83C6545D43D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9903CF05-D0B9-465C-A89D-83C6545D43D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
