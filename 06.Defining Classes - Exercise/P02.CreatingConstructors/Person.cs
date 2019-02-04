@@ -5,27 +5,22 @@
     public class Person
     {
         private string name;
-
         private int age;
 
         public Person()
         {
-            this.Name = "No name";
-            this.Age = 1;
+            this.name = "No name";
+            this.age = 1;
         }
 
-        public Person(string name)
+        public Person(int age) : this()
         {
-            if (string.IsNullOrEmpty(name))
-            {
-                throw new NullReferenceException("Invalid name");
-            }
+            this.age = age;
+        }
 
+        public Person(string name, int age)
+        {
             this.name = name;
-        }
-
-        public Person(string name, int age) : this(name)
-        {
             this.age = age;
         }
 
