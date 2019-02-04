@@ -30,16 +30,35 @@
                 input = Console.ReadLine();
             }
 
-            string input2 = Console.ReadLine();
+            input = Console.ReadLine();
 
-            while (input2 != "Engines done")
+            while (input != "Engines done")
             {
-                string[] tokens = input2.Split(" ", StringSplitOptions.RemoveEmptyEntries);
+                string[] tokens = input.Split(" ", StringSplitOptions.RemoveEmptyEntries);
 
                 int engineHorsePower = int.Parse(tokens[0]);
                 double engineCubicCapacity = double.Parse(tokens[1]);
+                Engine engine = new Engine(engineHorsePower, engineCubicCapacity);
+                engines.Add(engine);
 
-                input2 = Console.ReadLine();
+                input = Console.ReadLine();
+            }
+
+            input = Console.ReadLine();
+
+            while (input != "Show special")
+            {
+                string[] tokens = input.Split(" ", StringSplitOptions.RemoveEmptyEntries);
+                string make = tokens[0];
+                string model = tokens[1];
+                int year = int.Parse(tokens[2]);
+                double fuelQuantity = double.Parse(tokens[3]);
+                double fuelConsumption = double.Parse(tokens[4]);
+                int engineIndex = int.Parse(tokens[5]);
+                int tiresIndex = int.Parse(tokens[6]);
+
+
+                input = Console.ReadLine();
             }
         }
     }
