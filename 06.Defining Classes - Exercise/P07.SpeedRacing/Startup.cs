@@ -16,7 +16,7 @@
                 input = Console.ReadLine().Split(" ",StringSplitOptions.RemoveEmptyEntries);
 
                 string model = input[0];
-                int fuelAmount = int.Parse(input[1]);
+                double fuelAmount = double.Parse(input[1]);
                 double fuelConsumption = double.Parse(input[2]);
                 Car currentCar = new Car(model, fuelAmount, fuelConsumption);
 
@@ -29,6 +29,12 @@
             {
                 string model = input[1];
                 double traveledDistance = double.Parse(input[2]);
+
+                foreach (var car in cars)
+                {
+                    Console.WriteLine(car.CalculateTravelDistance(model, traveledDistance));
+                }
+                
 
                 input = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
             }
