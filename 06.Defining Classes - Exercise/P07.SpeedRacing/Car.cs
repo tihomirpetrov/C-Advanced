@@ -23,6 +23,7 @@ namespace P07.SpeedRacing
         public string Model
         {
             get { return this.model; }
+            set { this.model = value; }
         }
 
         public double FuelAmount
@@ -34,6 +35,7 @@ namespace P07.SpeedRacing
         public double FuelConsumptionPerKm
         {
             get { return this.fuelConsumptionPerKm; }
+            set { this.fuelConsumptionPerKm = value; }
         }
 
         public double TraveledDistance
@@ -53,7 +55,7 @@ namespace P07.SpeedRacing
             }
 
             this.fuelAmount -= neededFuel;
-            this.traveledDistance += kilometers;            
+            this.traveledDistance += kilometers;
         }
     }
 }

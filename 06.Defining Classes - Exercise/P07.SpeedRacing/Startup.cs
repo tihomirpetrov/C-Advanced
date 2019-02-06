@@ -9,8 +9,9 @@
         public static void Main()
         {
             int numberOfCars = int.Parse(Console.ReadLine());
+
             List<Car> cars = new List<Car>();
-            var cars2 = GetCars();
+            
             string[] input;
 
             for (int i = 0; i < numberOfCars; i++)
@@ -29,23 +30,18 @@
 
             while (input[0] != "End")
             {
-                var currentCar = cars.Where(c => c.Model == input[1].FirstOrDefault());
+                string model = input[1];
+                double traveledDistance = double.Parse(input[2]);
 
-                if (currentCar != null)
-                {
-                    currentCar.CalculateTravelDistance(input[2]);
-                }
-
-                //string model = input[1];
-                //double traveledDistance = double.Parse(input[2]);
-
-                //foreach (var car in cars)
-                //{
-                //    Console.WriteLine(car.CalculateTravelDistance(model, traveledDistance));
-                //}
-                
+                Car currentCar = cars.FirstOrDefault(x => x.Model == model);
+                currentCar.CalculateTravelDistance(traveledDistance);
 
                 input = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
+            }
+
+            foreach (Car car in cars)
+            {
+                Console.WriteLine($"{car.Model} {car.FuelAmount:f2} {car.TraveledDistance}");
             }
         }
     }
