@@ -14,10 +14,10 @@ namespace P07.SpeedRacing
 
         public Car(string model, double fuelAmount, double fuelConsumptionPerKm)
         {
-            this.model = model;
-            this.fuelAmount = fuelAmount;
-            this.fuelConsumptionPerKm = fuelConsumptionPerKm;
-            this.traveledDistance = 0.0;
+            this.Model = model;
+            this.FuelAmount = fuelAmount;
+            this.FuelConsumptionPerKm = fuelConsumptionPerKm;
+            this.TraveledDistance = 0.0;
         }
 
         public string Model
