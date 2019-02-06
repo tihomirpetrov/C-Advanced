@@ -14,31 +14,46 @@ namespace P07.SpeedRacing
 
         public Car(string model, double fuelAmount, double fuelConsumptionPerKm)
         {
-            this.Model = model;
-            this.FuelAmount = fuelAmount;
-            this.FuelConsumptionPerKm = fuelConsumptionPerKm;
+            this.model = model;
+            this.fuelAmount = fuelAmount;
+            this.fuelConsumptionPerKm = fuelConsumptionPerKm;
+            this.traveledDistance = 0.0;
         }
 
-        public double CalculateTravelDistance(string model, double fuelConsumptionPerKm)
+        public string Model
         {
-            if (traveledDistance > fuelAmount / fuelConsumptionPerKm)
-            {
-                fuelAmount -= (fuelAmount / fuelConsumptionPerKm) - traveledDistance;
-            }
-            else
+            get { return this.model; }
+        }
+
+        public double FuelAmount
+        {
+            get { return this.fuelAmount; }
+            set { this.fuelAmount = value; }
+        }
+
+        public double FuelConsumptionPerKm
+        {
+            get { return this.fuelConsumptionPerKm; }
+        }
+
+        public double TraveledDistance
+        {
+            get { return this.traveledDistance; }
+            set { this.traveledDistance = value; }
+        }
+
+        public void CalculateTravelDistance(double kilometers)
+        {
+            double neededFuel = kilometers * this.fuelConsumptionPerKm;
+
+            if (this.fuelAmount < neededFuel)
             {
                 Console.WriteLine("Insufficient fuel for the drive");
+                return;
             }
 
-            return FuelAmount;
+            this.fuelAmount -= neededFuel;
+            this.traveledDistance += kilometers;            
         }
-
-        public string Model { get; set; }
-
-        public double FuelAmount { get; set; }
-
-        public double FuelConsumptionPerKm { get; set; }
-
-        public double TraveledDistance { get; set; }
     }
 }

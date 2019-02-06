@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
 
     public class StartUp
     {
@@ -9,6 +10,7 @@
         {
             int numberOfCars = int.Parse(Console.ReadLine());
             List<Car> cars = new List<Car>();
+            var cars2 = GetCars();
             string[] input;
 
             for (int i = 0; i < numberOfCars; i++)
@@ -27,13 +29,20 @@
 
             while (input[0] != "End")
             {
-                string model = input[1];
-                double traveledDistance = double.Parse(input[2]);
+                var currentCar = cars.Where(c => c.Model == input[1].FirstOrDefault());
 
-                foreach (var car in cars)
+                if (currentCar != null)
                 {
-                    Console.WriteLine(car.CalculateTravelDistance(model, traveledDistance));
+                    currentCar.CalculateTravelDistance(input[2]);
                 }
+
+                //string model = input[1];
+                //double traveledDistance = double.Parse(input[2]);
+
+                //foreach (var car in cars)
+                //{
+                //    Console.WriteLine(car.CalculateTravelDistance(model, traveledDistance));
+                //}
                 
 
                 input = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
