@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P08.RawData", "P08.RawData\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P11.PokemonTrainer", "P11.PokemonTrainer\P11.PokemonTrainer.csproj", "{F93742B3-04F2-4A4E-8333-1F6981768D01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P09.RectangleIntersection", "P09.RectangleIntersection\P09.RectangleIntersection.csproj", "{1AA8D9CC-6601-44B6-A949-F6210F9B2AFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P09.RectangleIntersection", "P09.RectangleIntersection\P09.RectangleIntersection.csproj", "{1AA8D9CC-6601-44B6-A949-F6210F9B2AFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P12.Google", "P12.Google\P12.Google.csproj", "{BC9B4A20-7FBB-4E78-9A7E-3E0084EB35CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{1AA8D9CC-6601-44B6-A949-F6210F9B2AFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AA8D9CC-6601-44B6-A949-F6210F9B2AFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AA8D9CC-6601-44B6-A949-F6210F9B2AFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC9B4A20-7FBB-4E78-9A7E-3E0084EB35CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC9B4A20-7FBB-4E78-9A7E-3E0084EB35CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC9B4A20-7FBB-4E78-9A7E-3E0084EB35CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC9B4A20-7FBB-4E78-9A7E-3E0084EB35CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
