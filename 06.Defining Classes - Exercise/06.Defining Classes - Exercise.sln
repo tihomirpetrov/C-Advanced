@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06.CompanyRoster", "P06.Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07.SpeedRacing", "P07.SpeedRacing\P07.SpeedRacing.csproj", "{5C2E6AE7-9484-403D-B51A-927BF1EEB0DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P10.CarSalesman", "P10.Car Salesman\P10.CarSalesman.csproj", "{3954A80F-AF3B-4F42-8F62-0B62B4004A8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P10.CarSalesman", "P10.Car Salesman\P10.CarSalesman.csproj", "{3954A80F-AF3B-4F42-8F62-0B62B4004A8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08.RawData", "P08.RawData\P08.RawData.csproj", "{2AE3BDA8-927C-44F2-AB15-634F92E1CD65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P08.RawData", "P08.RawData\P08.RawData.csproj", "{2AE3BDA8-927C-44F2-AB15-634F92E1CD65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P11.PokemonTrainer", "P11.PokemonTrainer\P11.PokemonTrainer.csproj", "{F93742B3-04F2-4A4E-8333-1F6981768D01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{2AE3BDA8-927C-44F2-AB15-634F92E1CD65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AE3BDA8-927C-44F2-AB15-634F92E1CD65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AE3BDA8-927C-44F2-AB15-634F92E1CD65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F93742B3-04F2-4A4E-8333-1F6981768D01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F93742B3-04F2-4A4E-8333-1F6981768D01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F93742B3-04F2-4A4E-8333-1F6981768D01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F93742B3-04F2-4A4E-8333-1F6981768D01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
