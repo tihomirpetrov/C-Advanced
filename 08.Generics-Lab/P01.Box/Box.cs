@@ -1,38 +1,18 @@
 ﻿namespace BoxOfT
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-
-    public class Box<T>
+    public class Box
     {
-        public List<T> CreateList<T>(T item, int count)
+        public static void Main()
         {
-            List<T> list = new List<T>();
-
-            for (int i = 0; i < count; i++)
-            {
-                list.Add(item);
-            }
-
-            return list;
-        }
-        
-        private int count;
-        private T[] data;
-                
-        public int Count { get; set; }
-       
-        public void Add(T item)
-        {
-            this.data.Add(item);
-        }
-
-        public T Remove()
-        {
-            var rem = this.data.Last();
-            this.data.RemoveAt(this.data.Count - 1);
-            return num;
+            Box<int> box = new Box<int>();
+            box.Add(1);
+            box.Add(2);
+            box.Add(3);
+            Console.WriteLine(box.Remove());
+            box.Add(4);
+            box.Add(5);
+            Console.WriteLine(box.Remove());           
         }
     }
 }
