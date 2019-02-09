@@ -1,62 +1,28 @@
 ﻿namespace DirectoryRenamer
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
+    using System.IO;
+    using System.Text.RegularExpressions;
 
     public class Program
     {
         public static void Main()
         {
-            Console.Write("Enter number of folders: ");
-            int numberOfFolders = int.Parse(Console.ReadLine());
-            string[] directoryNames = new string[numberOfFolders];
-            List<char> directory = new List<char>();
-            StringBuilder sb = new StringBuilder();
-            StringBuilder sb2 = new StringBuilder();
+            DirectoryInfo directoryPath = new DirectoryInfo(@"d:\test");
 
-            string input = Console.ReadLine();
-
-            while (input != "enough")
+            foreach (var child in directoryPath.GetDirectories())
             {
-                int counter = 0;
-                
-
-                for (int i = 0; i < numberOfFolders; i++)
+                string name = child.FullName;
+                string pattern = @"(?<=\\)(\d+\w+)";
+                MatchCollection matchName = Regex.Matches(name, pattern);
+                foreach (Match item in matchName)
                 {
-                    for (int j = 0; j < input.Length; j++)
-                    {
-                        if (input[j] == '_')
-                        {
-                            counter++;
-                        }
-                        if (counter == 3)
-                        {
-                            int index = j;
-                            for (int k = index; k < input.Length; k++)
-                            {
-                                directory.Add(input[index]);
-                            }
-                            sb2 = sb;
-                            counter = 0;
-                            sb.Clear();
-                        }
-
-                        sb.Append(input[j]);
-                    }
-
-                    //for (int j = tokens.Length - 1; j >= 0; j--)
-                    //{
-                    //}
+                    string[] originalName = item.ToString().Split("___");
+                    string newName = $"{originalName[1]}___{originalName[0]}";
+                    string newNamePath = $@"d:\test\{newName}";
+                    Directory.Move(name, newNamePath);
                 }
-
-                input = Console.ReadLine();
             }
-
-            Console.Write(sb2);
-            Console.WriteLine(string.Join("", directory));
-            //Console.Write(string.Join("", directory));
         }
     }
 }

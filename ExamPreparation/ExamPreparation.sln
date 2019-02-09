@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03.SimpleCalculator", "P03
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryRenamer", "DirectoryRenamer\DirectoryRenamer.csproj", "{C9BC2BDE-3D88-40C6-87A6-20AB219CFBA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{35BFC72E-7D38-4F37-9650-45A966BFF52B}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,10 +33,6 @@ Global
 		{C9BC2BDE-3D88-40C6-87A6-20AB219CFBA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9BC2BDE-3D88-40C6-87A6-20AB219CFBA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9BC2BDE-3D88-40C6-87A6-20AB219CFBA9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{35BFC72E-7D38-4F37-9650-45A966BFF52B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{35BFC72E-7D38-4F37-9650-45A966BFF52B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{35BFC72E-7D38-4F37-9650-45A966BFF52B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{35BFC72E-7D38-4F37-9650-45A966BFF52B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

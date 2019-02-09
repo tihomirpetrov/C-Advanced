@@ -8,26 +8,26 @@
     {
         public static void Main()
         {
-            Stack<string> elements = new Stack<string>(Console.ReadLine().Split().ToArray());
-            Stack<int> numbers = new Stack<int>();
-            elements.Reverse();
+            string[] input = Console.ReadLine().Split().ToArray();
+            Stack<string> elements = new Stack<string>(input.Reverse());
 
-            foreach (var element in elements)
+            while (elements.Count > 1)
             {
-                if (element == "+")
+                int firstNumber = int.Parse(elements.Pop());
+                string operand = elements.Pop();
+                int secondNumber = int.Parse(elements.Pop());
+
+                switch (operand)
                 {
-                    numbers.Push(int.Parse(element));
-                }
-                else if (element == "-")
-                {
-                    //numbers.Pop(int.Parse(element));
-                }
-                else
-                {
-                    numbers.Push(int.Parse(element));
-                    elements.Pop();
+                    case "+":
+                        elements.Push((firstNumber + secondNumber).ToString());
+                        break;
+                    case "-":
+                        elements.Push((firstNumber - secondNumber).ToString());
+                        break;
                 }
             }
+            Console.WriteLine(elements.Pop());
         }
     }
 }
