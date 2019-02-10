@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06.GenericCountMethodDoubl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07.Tuple", "P07.Tuple\P07.Tuple.csproj", "{918180E1-2CB3-4669-8B6F-7D7025BAAB59}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08.Threeuple", "P08.Threeuple\P08.Threeuple.csproj", "{3F27D8F6-EF0F-4DBC-BA43-220EB3A36216}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{918180E1-2CB3-4669-8B6F-7D7025BAAB59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{918180E1-2CB3-4669-8B6F-7D7025BAAB59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{918180E1-2CB3-4669-8B6F-7D7025BAAB59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F27D8F6-EF0F-4DBC-BA43-220EB3A36216}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F27D8F6-EF0F-4DBC-BA43-220EB3A36216}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F27D8F6-EF0F-4DBC-BA43-220EB3A36216}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F27D8F6-EF0F-4DBC-BA43-220EB3A36216}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
