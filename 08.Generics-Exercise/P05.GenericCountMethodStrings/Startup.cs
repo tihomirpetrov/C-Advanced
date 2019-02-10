@@ -37,12 +37,5 @@
 
             return count;
         }
-
-        private static void Swap<T>(List<T> listWithData, int firstIndex, int secondIndex)
-        {
-            var temp = listWithData[firstIndex];
-            listWithData[firstIndex] = listWithData[secondIndex];
-            listWithData[secondIndex] = temp;
-        }
     }
 }
