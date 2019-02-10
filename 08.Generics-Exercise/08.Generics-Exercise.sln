@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.GenericSwapMethodString
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04.GenericSwapMethodIntegers", "P04.GenericSwapMethodIntegers\P04.GenericSwapMethodIntegers.csproj", "{647320C9-2F83-4CD7-87A4-A60EA96ADAA1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05.GenericCountMethodStrings", "P05.GenericCountMethodStrings\P05.GenericCountMethodStrings.csproj", "{FF6BD45F-EC28-41C4-8473-63ED4565271B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{647320C9-2F83-4CD7-87A4-A60EA96ADAA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{647320C9-2F83-4CD7-87A4-A60EA96ADAA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{647320C9-2F83-4CD7-87A4-A60EA96ADAA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF6BD45F-EC28-41C4-8473-63ED4565271B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF6BD45F-EC28-41C4-8473-63ED4565271B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF6BD45F-EC28-41C4-8473-63ED4565271B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF6BD45F-EC28-41C4-8473-63ED4565271B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
