@@ -1,7 +1,8 @@
-﻿namespace P01.Library
+﻿namespace IteratorsAndComparators
 {
     using System;
-    public class Startup
+
+    public class StartUp
     {
         public static void Main()
         {
