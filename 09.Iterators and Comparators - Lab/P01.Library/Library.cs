@@ -3,7 +3,7 @@
     using System.Collections;
     using System.Collections.Generic;
 
-    public class Library
+    public class Library : IEnumerable<Book>
     {
         private List<Book> books;
 
@@ -14,34 +14,12 @@
 
         public IEnumerator<Book> GetEnumerator()
         {
-            return new LibraryIterator(this.books);
+            foreach (var book in books)
+            {
+                yield return book;
+            }
         }
 
         IEnumerator IEnumerable.GetEnumerator() => this.GetEnumerator();
-    }
-
-    private class LibraryIterator : IEnumerable<Book>
-    {
-        private readonly List<Book> books;
-        private int currentIndex;
-
-        public LibraryIterator(IEnumerable<Book> books)
-        {
-            this.Reset();
-            this.books = new List<Book>(books);
-        }
-
-        public void Dispose()
-        {
-
-        }
-
-        public bool MoveNext() => ++this.currentIndex < this.books.Count;
-
-        public void Reset() => this.currentIndex = -1;
-
-        public Book Current => this.books[this.currentIndex];
-
-        object IEnumerator.Current => this.Current;
-    }
+    }   
 }
