@@ -14,13 +14,13 @@
 
         public IEnumerator<Book> GetEnumerator()
         {
-            foreach (var book in books)
-            {
-                yield return book;
-            }
+            return new LibraryIterator(this.books);
         }
 
-        IEnumerator IEnumerable.GetEnumerator() => this.GetEnumerator();
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return this.GetEnumerator();
+        }
 
         private class LibraryIterator : IEnumerator<Book>
         {
