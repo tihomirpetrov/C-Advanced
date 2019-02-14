@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02.LibraryIterator", "P02.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.ComparableBook", "P03.ComparableBook\P03.ComparableBook.csproj", "{B440BA4D-54FA-41A7-8F00-1E40C1D7B9F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04.BookComparer", "P04.BookComparer\P04.BookComparer.csproj", "{A6128F4C-E7CF-43EF-BA3F-E7913B0A7EF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B440BA4D-54FA-41A7-8F00-1E40C1D7B9F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B440BA4D-54FA-41A7-8F00-1E40C1D7B9F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B440BA4D-54FA-41A7-8F00-1E40C1D7B9F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6128F4C-E7CF-43EF-BA3F-E7913B0A7EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6128F4C-E7CF-43EF-BA3F-E7913B0A7EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6128F4C-E7CF-43EF-BA3F-E7913B0A7EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6128F4C-E7CF-43EF-BA3F-E7913B0A7EF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
