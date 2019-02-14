@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01.Library", "P01.Library\P01.Library.csproj", "{C649F57F-B583-4906-94ED-7688C6DD6820}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02.LibraryIterator", "P02.LibraryIterator\P02.LibraryIterator.csproj", "{D78A119D-44AF-413F-8A2E-B311AC487D0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02.LibraryIterator", "P02.LibraryIterator\P02.LibraryIterator.csproj", "{D78A119D-44AF-413F-8A2E-B311AC487D0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.ComparableBook", "P03.ComparableBook\P03.ComparableBook.csproj", "{B440BA4D-54FA-41A7-8F00-1E40C1D7B9F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D78A119D-44AF-413F-8A2E-B311AC487D0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D78A119D-44AF-413F-8A2E-B311AC487D0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D78A119D-44AF-413F-8A2E-B311AC487D0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B440BA4D-54FA-41A7-8F00-1E40C1D7B9F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B440BA4D-54FA-41A7-8F00-1E40C1D7B9F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B440BA4D-54FA-41A7-8F00-1E40C1D7B9F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B440BA4D-54FA-41A7-8F00-1E40C1D7B9F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
