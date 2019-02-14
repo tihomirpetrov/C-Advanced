@@ -1,9 +1,10 @@
 ﻿namespace IteratorsAndComparators
 {
+    using System;
     using System.Collections.Generic;
     using System.Linq;
 
-    public class Book
+    public class Book : IComparable<Book>
     {
         private List<string> authors;
 
