@@ -5,11 +5,11 @@
 
     public class Library : IEnumerable<Book>
     {
-        private List<Book> books;
+        private SortedSet<Book> books;
 
         public Library(params Book[] books)
         {
-            this.books = new List<Book>(books);
+            this.books = new SortedSet<Book>(books);
         }
 
         public IEnumerator<Book> GetEnumerator()
