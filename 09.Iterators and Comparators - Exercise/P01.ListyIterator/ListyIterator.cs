@@ -34,6 +34,10 @@
 
         public string Print()
         {
+            if (this.data.Count == 0)
+            {
+                return "Invalid operation!";
+            }
             return this.data.ToString();
         }
     }
