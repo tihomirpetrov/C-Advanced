@@ -38,7 +38,7 @@
             {
                 return "Invalid Operation!";
             }
-            return this.data.ToString();
+            return this.data[index].ToString();
         }
     }
 }
