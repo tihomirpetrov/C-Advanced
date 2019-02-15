@@ -36,7 +36,7 @@
         {
             if (this.data.Count == 0)
             {
-                return "Invalid operation!";
+                return "Invalid Operation!";
             }
             return this.data.ToString();
         }

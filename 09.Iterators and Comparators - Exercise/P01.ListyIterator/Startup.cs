@@ -22,17 +22,17 @@
 
                 else if (command == "Move")
                 {
-
+                    Console.WriteLine(listyIterator.Move());
                 }
 
                 else if (command == "Print")
                 {
-
+                    Console.WriteLine(listyIterator.Print());
                 }
 
                 else if (command == "HasNext")
                 {
-
+                    Console.WriteLine(listyIterator.HasNext());
                 }
 
                 input = Console.ReadLine();
