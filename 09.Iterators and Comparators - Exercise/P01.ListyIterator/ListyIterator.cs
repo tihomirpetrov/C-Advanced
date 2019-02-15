@@ -15,7 +15,12 @@
 
         public bool Move()
         {
-
+            if (HasNext())
+            {
+                this.index++;
+                return true;
+            }
+            return false;
         }
 
         public bool HasNext()
@@ -29,7 +34,7 @@
 
         public string Print()
         {
-
+            return this.data.ToString();
         }
     }
 }
