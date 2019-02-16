@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01.ListyIterator", "P01.Li
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02.Collection", "P02.Collection\P02.Collection.csproj", "{D4B6F1EA-935F-44A9-9704-033E2A456BA0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.Stack", "P03.Stack\P03.Stack.csproj", "{9FE5C05D-F8E2-4743-8592-06052D438954}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D4B6F1EA-935F-44A9-9704-033E2A456BA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4B6F1EA-935F-44A9-9704-033E2A456BA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4B6F1EA-935F-44A9-9704-033E2A456BA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FE5C05D-F8E2-4743-8592-06052D438954}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FE5C05D-F8E2-4743-8592-06052D438954}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FE5C05D-F8E2-4743-8592-06052D438954}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FE5C05D-F8E2-4743-8592-06052D438954}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
