@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.Stack", "P03.Stack\P03.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04.Froggy", "P04.Froggy\P04.Froggy.csproj", "{0513F3CB-72FA-4CA1-B2CD-4867165DF289}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05.ComparingObjects", "P05.ComparingObjects\P05.ComparingObjects.csproj", "{C951807D-8467-4B32-BE15-4FD913714A49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{0513F3CB-72FA-4CA1-B2CD-4867165DF289}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0513F3CB-72FA-4CA1-B2CD-4867165DF289}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0513F3CB-72FA-4CA1-B2CD-4867165DF289}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C951807D-8467-4B32-BE15-4FD913714A49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C951807D-8467-4B32-BE15-4FD913714A49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C951807D-8467-4B32-BE15-4FD913714A49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C951807D-8467-4B32-BE15-4FD913714A49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
