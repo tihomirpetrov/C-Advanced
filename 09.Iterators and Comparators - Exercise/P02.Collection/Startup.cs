@@ -37,10 +37,7 @@
 
                 else if (command == "PrintAll")
                 {
-                    foreach (var element in listyiterator)
-                    {
-                        Console.Write(element + " ");
-                    }
+                    Console.WriteLine(string.Join(" ", listyiterator));
                 }
 
                 input = Console.ReadLine();
