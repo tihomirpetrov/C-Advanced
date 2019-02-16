@@ -1,11 +1,8 @@
 ﻿namespace P05.ComparingObjects
 {
-    public class Person : Icomparable<Person>
+    using System;
+    public class Person : IComparable<Person>
     {
-        private string name;
-        private int age;
-        private string town;
-
         public Person(string name, int age, string town)
         {
             this.Name = name;
