@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace P06.StrategyPattern
+﻿namespace P06.StrategyPattern
 {
-    class Person
+    public class Person
     {
         public Person(string name, int age)
         {
@@ -15,5 +11,10 @@ namespace P06.StrategyPattern
         public string Name { get; set; }
 
         public int Age { get; set; }
+
+        public override string ToString()
+        {
+            return $"{this.Name} {this.Age}";
+        }
     }
 }

@@ -1,5 +1,4 @@
-﻿
-namespace P06.StrategyPattern
+﻿namespace P06.StrategyPattern
 {
     using System.Collections.Generic;
     public class PersonNameLengthComparer : IComparer<Person>
@@ -12,6 +11,8 @@ namespace P06.StrategyPattern
             {
                 return first.Name.ToLower()[0].CompareTo(second.Name.ToLower()[0]);
             }
+
+            return nameLengthResult;
         }
     }
 }
