@@ -22,7 +22,7 @@ namespace P04.Froggy
                 yield return this.stoneValues[i];
             }
 
-            int startReversedIndex = this.stoneValues.Count - 1 % 2 != 0 ? this.stoneValues.Count - 2 : this.stoneValues.Count - 1;
+            int startReversedIndex = this.stoneValues.Count % 2 == 0 ? this.stoneValues.Count - 1 : this.stoneValues.Count - 2;
 
             for (int i = startReversedIndex; i >= 0; i -= 2)
             {
