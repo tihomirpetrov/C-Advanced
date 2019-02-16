@@ -1,7 +1,8 @@
 ﻿namespace P02.Collection
 {
+    using System.Collections;
     using System.Collections.Generic;
-    public class ListyIterator<T>
+    public class ListyIterator<T> : IEnumerable<T>
     {
         private List<T> data;
         private int index;
@@ -41,5 +42,16 @@
             }
             return this.data[index].ToString();
         }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            for (int i = 0; i < this.data.Count; i++)
+            {
+                yield return this.data[i];
+            }
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        => this.GetEnumerator();        
     }
 }

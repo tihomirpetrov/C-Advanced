@@ -1,7 +1,6 @@
 ﻿namespace P01.ListyIterator
 {
     using System.Collections.Generic;
-
     public class ListyIterator<T>
     {
         private List<T> data;
@@ -39,6 +38,6 @@
                 return "Invalid Operation!";
             }
             return this.data[index].ToString();
-        }
+        }      
     }
 }
