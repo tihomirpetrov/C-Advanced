@@ -11,7 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03.SimpleCalculator", "P03
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DirectoryRenamer", "DirectoryRenamer\DirectoryRenamer.csproj", "{C9BC2BDE-3D88-40C6-87A6-20AB219CFBA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryRenamer-2", "DirectoryRenamer-2\DirectoryRenamer-2.csproj", "{4897425E-2E3B-4449-9E9D-9DE563936019}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DirectoryRenamer-2", "DirectoryRenamer-2\DirectoryRenamer-2.csproj", "{4897425E-2E3B-4449-9E9D-9DE563936019}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01.Socks", "P01.Socks\P01.Socks.csproj", "{E3844872-12DE-47E1-83E8-A226E56F196E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02.ExcelFunctions", "P02.ExcelFunctions\P02.ExcelFunctions.csproj", "{3B74B7CA-232A-45C8-B175-6A032F812F7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.Repository", "P03.Repository\P03.Repository.csproj", "{DA61797C-D045-4F52-BFCE-92D1765C173A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +45,18 @@ Global
 		{4897425E-2E3B-4449-9E9D-9DE563936019}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4897425E-2E3B-4449-9E9D-9DE563936019}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4897425E-2E3B-4449-9E9D-9DE563936019}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3844872-12DE-47E1-83E8-A226E56F196E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3844872-12DE-47E1-83E8-A226E56F196E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3844872-12DE-47E1-83E8-A226E56F196E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3844872-12DE-47E1-83E8-A226E56F196E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B74B7CA-232A-45C8-B175-6A032F812F7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B74B7CA-232A-45C8-B175-6A032F812F7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B74B7CA-232A-45C8-B175-6A032F812F7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B74B7CA-232A-45C8-B175-6A032F812F7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA61797C-D045-4F52-BFCE-92D1765C173A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA61797C-D045-4F52-BFCE-92D1765C173A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA61797C-D045-4F52-BFCE-92D1765C173A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA61797C-D045-4F52-BFCE-92D1765C173A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
