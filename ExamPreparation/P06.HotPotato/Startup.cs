@@ -12,7 +12,7 @@
             int n = int.Parse(Console.ReadLine());
             Queue<string> playingChildren = new Queue<string>(children);
 
-            while (playingChildren.Count != 1)
+            while (playingChildren.Count > 1)
             {
                 for (int i = 1; i < n; i++)
                 {
