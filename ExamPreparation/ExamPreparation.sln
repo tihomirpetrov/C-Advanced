@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07.TrafficJam", "P07.Traff
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01.BasicStackOperations", "P01.BasicStackOperations\P01.BasicStackOperations.csproj", "{6EECD332-E35C-47F8-81DE-53DFF6FFCE3C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02.BasicQueueOperations", "P02.BasicQueueOperations\P02.BasicQueueOperations.csproj", "{0BF1A462-BB0F-4A8B-BB25-1B5E8737B732}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{6EECD332-E35C-47F8-81DE-53DFF6FFCE3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EECD332-E35C-47F8-81DE-53DFF6FFCE3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EECD332-E35C-47F8-81DE-53DFF6FFCE3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BF1A462-BB0F-4A8B-BB25-1B5E8737B732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BF1A462-BB0F-4A8B-BB25-1B5E8737B732}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BF1A462-BB0F-4A8B-BB25-1B5E8737B732}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BF1A462-BB0F-4A8B-BB25-1B5E8737B732}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
