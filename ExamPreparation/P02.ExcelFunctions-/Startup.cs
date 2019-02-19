@@ -25,17 +25,16 @@
 
             if (command == "hide")
             {
-
                 for (int row = 0; row < table.Length; row++)
                 {
                     List<string> lineToPrint = new List<string>(table[row]);
 
                     lineToPrint.RemoveAt(headerIndex);
 
-                    //Console.WriteLine(string.Join(" | ",table[row].Where((x, i) => i != headerIndex).ToArray()));
-                    lineToPrint.AddRange(table[row].Take(headerIndex).ToList());
-                    lineToPrint.AddRange(table[row].Skip(headerIndex + 1));
-                    Console.WriteLine(string.Join(" | ", lineToPrint));
+                    Console.WriteLine(string.Join(" | ",table[row].Where((x, i) => i != headerIndex).ToArray()));
+                    //lineToPrint.AddRange(table[row].Take(headerIndex).ToList());
+                    //lineToPrint.AddRange(table[row].Skip(headerIndex + 1));
+                    //Console.WriteLine(string.Join(" | ", lineToPrint));
 
                     table[row] = lineToPrint.ToArray();
                 }
@@ -61,7 +60,17 @@
             else if (command == "filter")
             {
                 string value = commandArgs[2];
+                string[] headerRow = table[0];
 
+                Console.WriteLine(string.Join(" | ", headerRow));
+
+                for (int i = 1; i < table.Length; i++)
+                {
+                    if (table[i][headerIndex] == value)
+                    {
+                        Console.WriteLine(string.Join(" | ", table[i]));
+                    }
+                }
             }
         }
     }
