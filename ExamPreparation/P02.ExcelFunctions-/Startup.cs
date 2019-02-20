@@ -31,7 +31,7 @@
 
                     lineToPrint.RemoveAt(headerIndex);
 
-                    Console.WriteLine(string.Join(" | ",table[row].Where((x, i) => i != headerIndex).ToArray()));
+                    Console.WriteLine(string.Join(" | ", table[row].Where((x, i) => i != headerIndex).ToArray()));
                     //lineToPrint.AddRange(table[row].Take(headerIndex).ToList());
                     //lineToPrint.AddRange(table[row].Skip(headerIndex + 1));
                     //Console.WriteLine(string.Join(" | ", lineToPrint));

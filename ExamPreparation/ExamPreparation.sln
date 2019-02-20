@@ -21,21 +21,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03.Repository", "P03.Repos
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04.MatchingBrackets", "P04.MatchingBrackets\P04.MatchingBrackets.csproj", "{69541CF7-8053-4375-BA2D-A266613227A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05.Supermarket", "P05.Supermarket\P05.Supermarket.csproj", "{7EF9CE76-9962-40FF-A572-CEB02A78531E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05.Supermarket", "P05.Supermarket\P05.Supermarket.csproj", "{7EF9CE76-9962-40FF-A572-CEB02A78531E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06.HotPotato", "P06.HotPotato\P06.HotPotato.csproj", "{AF3135E9-FCE8-46C3-B50D-B95D9076DA6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06.HotPotato", "P06.HotPotato\P06.HotPotato.csproj", "{AF3135E9-FCE8-46C3-B50D-B95D9076DA6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07.TrafficJam", "P07.TrafficJam\P07.TrafficJam.csproj", "{9F9E8AF3-CFB3-4D04-8329-C7E521C29C65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07.TrafficJam", "P07.TrafficJam\P07.TrafficJam.csproj", "{9F9E8AF3-CFB3-4D04-8329-C7E521C29C65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01.BasicStackOperations", "P01.BasicStackOperations\P01.BasicStackOperations.csproj", "{6EECD332-E35C-47F8-81DE-53DFF6FFCE3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01.BasicStackOperations", "P01.BasicStackOperations\P01.BasicStackOperations.csproj", "{6EECD332-E35C-47F8-81DE-53DFF6FFCE3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02.BasicQueueOperations", "P02.BasicQueueOperations\P02.BasicQueueOperations.csproj", "{0BF1A462-BB0F-4A8B-BB25-1B5E8737B732}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02.BasicQueueOperations", "P02.BasicQueueOperations\P02.BasicQueueOperations.csproj", "{0BF1A462-BB0F-4A8B-BB25-1B5E8737B732}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.MaximumAndMinimumElement", "P03.MaximumAndMinimumElement\P03.MaximumAndMinimumElement.csproj", "{B70A5E04-4514-4F7A-92D5-DABD5B9490E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03.MaximumAndMinimumElement", "P03.MaximumAndMinimumElement\P03.MaximumAndMinimumElement.csproj", "{B70A5E04-4514-4F7A-92D5-DABD5B9490E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04.FastFood", "P04.FastFood\P04.FastFood.csproj", "{462D85B7-7DF1-44F8-8960-727651A4D574}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04.FastFood", "P04.FastFood\P04.FastFood.csproj", "{462D85B7-7DF1-44F8-8960-727651A4D574}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02.ExcelFunctions-", "P02.ExcelFunctions-\P02.ExcelFunctions-.csproj", "{244BC498-AAD4-40F3-9B47-6B4C3F6CBD4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02.ExcelFunctions-", "P02.ExcelFunctions-\P02.ExcelFunctions-.csproj", "{244BC498-AAD4-40F3-9B47-6B4C3F6CBD4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.Repository-", "P03.Repository-\P03.Repository-.csproj", "{D10C833C-4577-4C7B-9238-2BCECE451B7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{244BC498-AAD4-40F3-9B47-6B4C3F6CBD4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{244BC498-AAD4-40F3-9B47-6B4C3F6CBD4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{244BC498-AAD4-40F3-9B47-6B4C3F6CBD4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D10C833C-4577-4C7B-9238-2BCECE451B7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D10C833C-4577-4C7B-9238-2BCECE451B7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D10C833C-4577-4C7B-9238-2BCECE451B7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D10C833C-4577-4C7B-9238-2BCECE451B7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
