@@ -39,6 +39,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02.ExcelFunctions-", "P02.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.Repository-", "P03.Repository-\P03.Repository-.csproj", "{D10C833C-4577-4C7B-9238-2BCECE451B7A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01.Hospital", "P01.Hospital\P01.Hospital.csproj", "{CA2760C7-64B4-4819-A1ED-FE0A91D66E47}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{D10C833C-4577-4C7B-9238-2BCECE451B7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D10C833C-4577-4C7B-9238-2BCECE451B7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D10C833C-4577-4C7B-9238-2BCECE451B7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA2760C7-64B4-4819-A1ED-FE0A91D66E47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA2760C7-64B4-4819-A1ED-FE0A91D66E47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA2760C7-64B4-4819-A1ED-FE0A91D66E47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA2760C7-64B4-4819-A1ED-FE0A91D66E47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
