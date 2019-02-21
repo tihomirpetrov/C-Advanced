@@ -25,69 +25,62 @@
                 int bombRow = cellsWithBombs[0];
                 int bombCol = cellsWithBombs[1];
                 int bombNumber = matrix[bombRow][bombCol];
+                matrix[bombRow][bombCol] = 0;
 
-                if (!bombIndexes.ContainsKey(bombRow))
+                if (bombRow < matrix.Length - 1)
                 {
-                    bombIndexes.Add(bombRow, -1);
-                }
-                bombIndexes[bombRow] = bombCol;
-
-
-                if (bombIndexes.ContainsKey(bombRow) && bombIndexes.ContainsValue(bombCol))
-                {
-                    matrix[bombRow][bombCol] = 0;
+                    if (matrix[bombRow + 1][bombCol] > 0)
+                    {
+                        matrix[bombRow + 1][bombCol] -= bombNumber;
+                    }
                 }
 
-                if (bombRow - 1 < 0 || bombRow + 1 > matrix.Length - 1)
+                if (bombCol + 1 <= matrix.Length - 1 && matrix[bombRow + 1][bombCol + 1] > 0)
                 {
-                    continue;
+                    matrix[bombRow + 1][bombCol + 1] -= bombNumber;
                 }
-                else
+                if (bombRow > 0)
                 {
                     if (matrix[bombRow - 1][bombCol] > 0)
                     {
                         matrix[bombRow - 1][bombCol] -= bombNumber;
                     }
-                    if (matrix[bombRow + 1][bombCol] > 0)
-                    {
-                        matrix[bombRow + 1][bombCol] -= bombNumber;
-                    }
 
-                    if (bombCol - 1 >= 0 && matrix[bombRow - 1][bombCol - 1] >= 0)
+                    if (bombCol - 1 >= 0 && matrix[bombRow - 1][bombCol - 1] > 0)
                     {
                         matrix[bombRow - 1][bombCol - 1] -= bombNumber;
                     }
 
-                    if (bombCol + 1 <= matrix.Length && matrix[bombRow + 1][bombCol + 1] > 0)
+                    if (bombCol < matrix.Length - 1)
                     {
-                        matrix[bombRow + 1][bombCol + 1] -= bombNumber;
+                        if (matrix[bombRow - 1][bombCol + 1] > 0)
+                        {
+                            matrix[bombRow - 1][bombCol + 1] -= bombNumber;
+                        }
                     }
                 }
 
-                //if (bombCol - 1 < 0 || bombCol + 1 > 0)
-                //{
-
-                //}
-                if (matrix[bombRow - 1][bombCol + 1] > 0)
-                {
-                    matrix[bombRow - 1][bombCol + 1] -= bombNumber;
-                }
                 if (bombCol > 0)
                 {
                     if (matrix[bombRow][bombCol - 1] > 0)
                     {
                         matrix[bombRow][bombCol - 1] -= bombNumber;
                     }
-                    if (matrix[bombRow + 1][bombCol - 1] > 0)
+                    if (bombRow < matrix.Length - 1)
                     {
-                        matrix[bombRow + 1][bombCol - 1] -= bombNumber;
+                        if (matrix[bombRow + 1][bombCol - 1] > 0)
+                        {
+                            matrix[bombRow + 1][bombCol - 1] -= bombNumber;
+                        }
                     }
                 }
-                if (matrix[bombRow][bombCol + 1] > 0)
+                if (bombCol < matrix.Length - 1)
                 {
-                    matrix[bombRow][bombCol + 1] -= bombNumber;
+                    if (matrix[bombRow][bombCol + 1] > 0)
+                    {
+                        matrix[bombRow][bombCol + 1] -= bombNumber;
+                    }
                 }
-                
             }
 
             int count = 0;
