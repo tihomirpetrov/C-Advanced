@@ -52,6 +52,9 @@
 
             }
 
+
+            //it's just for test where is the miner
+            //should be deleted before submit to judge
             foreach (var item in gameField)
             {
                 Console.WriteLine(string.Join("", item));
