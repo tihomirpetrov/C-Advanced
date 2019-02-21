@@ -6,7 +6,7 @@
     public class Parking
     {
         private Dictionary<string, Car> cars;
-        private int capacity;
+        private readonly int capacity;
 
         public Parking(int capacity)
         {
@@ -23,14 +23,15 @@
                 return "Car with that registration number, already exists!";
             }
 
-            if (this.cars.Count > capacity)
+            else if (this.cars.Count == this.capacity)
             {
                 return "Parking is full!";
             }
-            cars.Add(car.RegistrationNumber, car);
-
-            return $"Successfully added new car {car.Make} {car.RegistrationNumber}";
-
+            else
+            {
+                cars.Add(car.RegistrationNumber, car);
+                return $"Successfully added new car {car.Make} {car.RegistrationNumber}";
+            }
         }
 
         public string RemoveCar(string registrationNumber)
@@ -48,7 +49,7 @@
 
         public Car GetCar(string registrationNumber)
         {
-            return this.cars[registrationNumber];           
+            return this.cars[registrationNumber];
         }
 
         public void RemoveSetOfRegistrationNumber(List<string> registationNumbers)
