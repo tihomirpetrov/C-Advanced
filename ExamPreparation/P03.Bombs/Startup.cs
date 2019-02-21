@@ -1,7 +1,6 @@
 ﻿namespace P03.Bombs
 {
     using System;
-    using System.Collections.Generic;
     using System.Linq;
 
     public class Startup
@@ -26,16 +25,9 @@
                 int bombNumber = matrix[bombRow][bombCol];
                 matrix[bombRow][bombCol] = 0;
 
-                if (bombRow < matrix.Length - 1)
-                {
-                    if (matrix[bombRow + 1][bombCol] > 0)
-                    {
-                        matrix[bombRow + 1][bombCol] -= bombNumber;
-                    }
-                }
-
                 if (bombCol + 1 <= matrix.Length - 1 && matrix[bombRow + 1][bombCol + 1] > 0)
                 {
+                    matrix[bombRow + 1][bombCol] -= bombNumber;
                     matrix[bombRow + 1][bombCol + 1] -= bombNumber;
                 }
                 if (bombRow > 0)
