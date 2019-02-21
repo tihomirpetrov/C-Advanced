@@ -25,10 +25,20 @@
                 int bombNumber = matrix[bombRow][bombCol];
                 matrix[bombRow][bombCol] = 0;
 
-                if (bombCol + 1 <= matrix.Length - 1 && matrix[bombRow + 1][bombCol + 1] > 0)
+                if (bombCol < matrix.Length - 1 || bombRow < matrix.Length -1)
                 {
-                    matrix[bombRow + 1][bombCol] -= bombNumber;
-                    matrix[bombRow + 1][bombCol + 1] -= bombNumber;
+                    if (matrix[bombRow + 1][bombCol] > 0)
+                    {
+                        matrix[bombRow + 1][bombCol] -= bombNumber;
+                    }
+                }
+                
+                if (bombCol < matrix.Length - 1)
+                {
+                    if (matrix[bombRow + 1][bombCol + 1] > 0)
+                    {
+                        matrix[bombRow + 1][bombCol + 1] -= bombNumber;
+                    }
                 }
                 if (bombRow > 0)
                 {
@@ -36,6 +46,7 @@
                     {
                         matrix[bombRow - 1][bombCol] -= bombNumber;
                     }
+
 
                     if (bombCol - 1 >= 0 && matrix[bombRow - 1][bombCol - 1] > 0)
                     {
