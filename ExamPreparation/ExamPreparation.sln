@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04.TheKitchen", "P04.TheKi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02.Tagram", "P02.Tagram\P02.Tagram.csproj", "{EBAEFB4F-C7BB-451F-8269-380E865750EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.Miner", "P03.Miner\P03.Miner.csproj", "{CC1FFDFC-132A-4DA1-B208-4C278571388C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +161,10 @@ Global
 		{EBAEFB4F-C7BB-451F-8269-380E865750EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBAEFB4F-C7BB-451F-8269-380E865750EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBAEFB4F-C7BB-451F-8269-380E865750EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC1FFDFC-132A-4DA1-B208-4C278571388C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC1FFDFC-132A-4DA1-B208-4C278571388C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC1FFDFC-132A-4DA1-B208-4C278571388C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC1FFDFC-132A-4DA1-B208-4C278571388C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
