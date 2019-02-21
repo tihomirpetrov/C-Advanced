@@ -17,7 +17,6 @@
             }
 
             string[] coordinates = Console.ReadLine().Split(" ").ToArray();
-            Dictionary<int, int> bombIndexes = new Dictionary<int, int>();
 
             for (int i = 0; i < coordinates.Length; i++)
             {
