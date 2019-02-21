@@ -49,7 +49,7 @@
             foreach (var card in cardSportPrice.OrderByDescending(x =>x.Value.Values.Count))
             {
                 Console.WriteLine($"{card.Key}:");
-                foreach (var item in card.Value)
+                foreach (var item in card.Value.OrderBy(x =>x.Key))
                 {
                     Console.WriteLine($"  -{item.Key} - {item.Value:f2}");
                 }
