@@ -20,7 +20,6 @@
                 {
                     int bottle = bottles.Pop();
                     cup -= bottle;
-
                 }
                 wastedWater += Math.Abs(cup);
             }

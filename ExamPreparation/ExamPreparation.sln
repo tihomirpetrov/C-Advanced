@@ -57,6 +57,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03.Miner", "P03.Miner\P03.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04.CupsAndBottles", "P04.CupsAndBottles\P04.CupsAndBottles.csproj", "{4149C78E-6842-490B-A92A-79660CE90D77}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04.CupsAndBottles-", "P04.CupsAndBottles-\P04.CupsAndBottles-.csproj", "{50D05CD5-72D3-4CDA-8486-EF4EF5B23549}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -171,6 +173,10 @@ Global
 		{4149C78E-6842-490B-A92A-79660CE90D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4149C78E-6842-490B-A92A-79660CE90D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4149C78E-6842-490B-A92A-79660CE90D77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50D05CD5-72D3-4CDA-8486-EF4EF5B23549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50D05CD5-72D3-4CDA-8486-EF4EF5B23549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50D05CD5-72D3-4CDA-8486-EF4EF5B23549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50D05CD5-72D3-4CDA-8486-EF4EF5B23549}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
