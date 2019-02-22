@@ -45,15 +45,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02.Sneaking", "P02.Sneakin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03.SoftUniParking", "P03.SoftUniParking\P03.SoftUniParking.csproj", "{CA940493-E8BC-48E9-9562-C8823818B0F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01.SportCards", "P01.SportCards\P01.SportCards.csproj", "{56722228-AE0B-474A-B83C-73B24357A151}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01.SportCards", "P01.SportCards\P01.SportCards.csproj", "{56722228-AE0B-474A-B83C-73B24357A151}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.Bombs", "P03.Bombs\P03.Bombs.csproj", "{FDE0302E-1051-449D-B04F-C11E15912CAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03.Bombs", "P03.Bombs\P03.Bombs.csproj", "{FDE0302E-1051-449D-B04F-C11E15912CAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04.TheKitchen", "P04.TheKitchen\P04.TheKitchen.csproj", "{25157D52-F9CD-4D94-B7C3-9BB3EFBB0CC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04.TheKitchen", "P04.TheKitchen\P04.TheKitchen.csproj", "{25157D52-F9CD-4D94-B7C3-9BB3EFBB0CC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02.Tagram", "P02.Tagram\P02.Tagram.csproj", "{EBAEFB4F-C7BB-451F-8269-380E865750EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02.Tagram", "P02.Tagram\P02.Tagram.csproj", "{EBAEFB4F-C7BB-451F-8269-380E865750EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03.Miner", "P03.Miner\P03.Miner.csproj", "{CC1FFDFC-132A-4DA1-B208-4C278571388C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03.Miner", "P03.Miner\P03.Miner.csproj", "{CC1FFDFC-132A-4DA1-B208-4C278571388C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04.CupsAndBottles", "P04.CupsAndBottles\P04.CupsAndBottles.csproj", "{4149C78E-6842-490B-A92A-79660CE90D77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -165,6 +167,10 @@ Global
 		{CC1FFDFC-132A-4DA1-B208-4C278571388C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC1FFDFC-132A-4DA1-B208-4C278571388C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC1FFDFC-132A-4DA1-B208-4C278571388C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4149C78E-6842-490B-A92A-79660CE90D77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4149C78E-6842-490B-A92A-79660CE90D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4149C78E-6842-490B-A92A-79660CE90D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4149C78E-6842-490B-A92A-79660CE90D77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
