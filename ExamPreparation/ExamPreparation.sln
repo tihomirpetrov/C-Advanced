@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04.CupsAndBottles", "P04.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04.CupsAndBottles-", "P04.CupsAndBottles-\P04.CupsAndBottles-.csproj", "{50D05CD5-72D3-4CDA-8486-EF4EF5B23549}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01.Crossroads", "P01.Crossroads\P01.Crossroads.csproj", "{1BBE8875-4307-47DC-95BA-7E383E19D0D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -177,6 +179,10 @@ Global
 		{50D05CD5-72D3-4CDA-8486-EF4EF5B23549}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50D05CD5-72D3-4CDA-8486-EF4EF5B23549}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50D05CD5-72D3-4CDA-8486-EF4EF5B23549}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BBE8875-4307-47DC-95BA-7E383E19D0D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BBE8875-4307-47DC-95BA-7E383E19D0D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BBE8875-4307-47DC-95BA-7E383E19D0D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BBE8875-4307-47DC-95BA-7E383E19D0D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
