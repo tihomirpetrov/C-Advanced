@@ -1,18 +1,16 @@
 ﻿namespace P02.TronRacers
 {
     using System;
-    using System.Linq;
 
-    public class Startup
+    public class StartUp
     {
         public static void Main()
         {
             int sizeOfMatrix = int.Parse(Console.ReadLine());
             char[][] matrix = new char[sizeOfMatrix][];
-
-            for (int row = 0; row < sizeOfMatrix; row++)
+            for (int i = 0; i < sizeOfMatrix; i++)
             {
-                matrix[row] = Console.ReadLine().ToCharArray();
+                matrix[i] = Console.ReadLine().ToCharArray();
             }
 
             int firstPlayerRow = -1;
@@ -20,31 +18,29 @@
             int secondPlayerRow = -1;
             int secondPlayerCol = -1;
 
-            for (int row = 0; row < matrix.Length; row++)
+            for (int i = 0; i < matrix.Length; i++)
             {
-                for (int col = 0; col < matrix[row].Length; col++)
+                for (int j = 0; j < matrix[i].Length; j++)
                 {
-                    if (matrix[row][col] == 'f')
+                    if (matrix[i][j] == 'f')
                     {
-                        firstPlayerRow = row;
-                        firstPlayerCol = col;
+                        firstPlayerRow = i;
+                        firstPlayerCol = j;
                     }
 
-                    if (matrix[row][col] == 's')
+                    if (matrix[i][j] == 's')
                     {
-                        secondPlayerRow = row;
-                        secondPlayerCol = col;
+                        secondPlayerRow = i;
+                        secondPlayerCol = j;
                     }
                 }
-            }           
-
-            string[] input = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
+            }
 
             while (true)
             {
-                string[] commandLine = Console.ReadLine().Split();
-                string firstCommand = commandLine[0];
-                string secondCommand = commandLine[1];
+                string[] input = Console.ReadLine().Split();
+                string firstCommand = input[0];
+                string secondCommand = input[1];
                 switch (firstCommand)
                 {
                     case "up":
@@ -95,7 +91,7 @@
                 }
                 else if (matrix[firstPlayerRow][firstPlayerCol] == 's')
                 {
-                    matrix[firstPlayerCol][firstPlayerCol] = 'x';
+                    matrix[firstPlayerRow][firstPlayerCol] = 'x';
                     break;
                 }
 
@@ -157,10 +153,7 @@
             foreach (var item in matrix)
             {
                 Console.WriteLine(string.Join("", item));
-            }
-
-            //input = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
+            }           
         }
-
     }
 }
