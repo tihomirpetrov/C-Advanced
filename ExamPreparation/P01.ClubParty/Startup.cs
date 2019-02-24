@@ -4,7 +4,7 @@
     using System.Collections.Generic;
     using System.Linq;
 
-    public class Program
+    public class Startup
     {
         public static void Main()
         {
@@ -69,6 +69,7 @@
 
             }
 
+            Console.WriteLine();
 
         }
     }
