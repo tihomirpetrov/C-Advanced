@@ -22,132 +22,145 @@
 
             for (int row = 0; row < matrix.Length; row++)
             {
-                if (matrix[row].Contains('f'))
+                for (int col = 0; col < matrix[row].Length; col++)
                 {
-                    firstPlayerRow = row;
-                    firstPlayerCol = Array.IndexOf(matrix[row], 'f');
+                    if (matrix[row][col] == 'f')
+                    {
+                        firstPlayerRow = row;
+                        firstPlayerCol = col;
+                    }
+
+                    if (matrix[row][col] == 's')
+                    {
+                        secondPlayerRow = row;
+                        secondPlayerCol = col;
+                    }
                 }
-                if (matrix[row].Contains('s'))
-                {
-                    secondPlayerRow = row;
-                    secondPlayerCol = Array.IndexOf(matrix[row], 's');
-                }
-            }
+            }           
 
             string[] input = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
 
-
             while (true)
             {
-                if (matrix[firstPlayerRow][firstPlayerCol] == matrix[secondPlayerRow][secondPlayerCol])
+                string[] commandLine = Console.ReadLine().Split();
+                string firstCommand = commandLine[0];
+                string secondCommand = commandLine[1];
+                switch (firstCommand)
                 {
+                    case "up":
+                        if (firstPlayerRow > 0)
+                        {
+                            firstPlayerRow--;
+                        }
+                        else
+                        {
+                            firstPlayerRow = sizeOfMatrix - 1;
+                        }
+                        break;
+                    case "down":
+                        if (firstPlayerRow < sizeOfMatrix - 1)
+                        {
+                            firstPlayerRow++;
+                        }
+                        else
+                        {
+                            firstPlayerRow = 0;
+                        }
+                        break;
+                    case "left":
+                        if (firstPlayerCol > 0)
+                        {
+                            firstPlayerCol--;
+                        }
+                        else
+                        {
+                            firstPlayerCol = matrix[0].Length - 1;
+                        }
+                        break;
+                    case "right":
+                        if (firstPlayerCol < matrix[0].Length - 1)
+                        {
+                            firstPlayerCol++;
+                        }
+                        else
+                        {
+                            firstPlayerCol = 0;
+                        }
+                        break;
+                }
+
+                if (matrix[firstPlayerRow][firstPlayerCol] == '*')
+                {
+                    matrix[firstPlayerRow][firstPlayerCol] = 'f';
+                }
+                else if (matrix[firstPlayerRow][firstPlayerCol] == 's')
+                {
+                    matrix[firstPlayerCol][firstPlayerCol] = 'x';
                     break;
                 }
 
-                string firstPlayerMovement = input[0];
-                string secondPlayerMovement = input[1];
-                //matrix[firstPlayerRow][firstPlayerCol] = 'f';
-                //matrix[secondPlayerRow][secondPlayerCol] = 's';
-                                             
-                //for (int row = 0; row < matrix.Length; row++)
-                //{
-                //    if (matrix[row].Contains('f'))
-                //    {
-                //        firstPlayerRow = row;
-                //        firstPlayerCol = Array.IndexOf(matrix[row], 'f');
-                //    }
-                //    if (matrix[row].Contains('s'))
-                //    {
-                //        secondPlayerRow = row;
-                //        secondPlayerCol = Array.IndexOf(matrix[row], 's');
-                //    }
-                //}
-
-                if (firstPlayerMovement == "down")
+                switch (secondCommand)
                 {
-                    firstPlayerRow++;
-                    matrix[firstPlayerRow][firstPlayerCol] = 'f';
-                    if (matrix[firstPlayerRow][firstPlayerCol] == matrix[secondPlayerRow][secondPlayerCol])
-                    {
+                    case "up":
+                        if (secondPlayerRow > 0)
+                        {
+                            secondPlayerRow--;
+                        }
+                        else
+                        {
+                            secondPlayerRow = sizeOfMatrix - 1;
+                        }
                         break;
-                    }
-                }
-                else if (firstPlayerMovement == "up")
-                {
-                    firstPlayerRow--;
-                    matrix[firstPlayerRow][firstPlayerCol] = 'f';
-                    if (matrix[firstPlayerRow][firstPlayerCol] == matrix[secondPlayerRow][secondPlayerCol])
-                    {
+                    case "down":
+                        if (secondPlayerRow < sizeOfMatrix - 1)
+                        {
+                            secondPlayerRow++;
+                        }
+                        else
+                        {
+                            secondPlayerRow = 0;
+                        }
                         break;
-                    }
-                }
-                else if (firstPlayerMovement == "left")
-                {
-                    firstPlayerCol--;
-                    matrix[firstPlayerRow][firstPlayerCol] = 'f';
-                    if (matrix[firstPlayerRow][firstPlayerCol] == matrix[secondPlayerRow][secondPlayerCol])
-                    {
+                    case "left":
+                        if (secondPlayerCol > 0)
+                        {
+                            secondPlayerCol--;
+                        }
+                        else
+                        {
+                            secondPlayerCol = matrix[0].Length - 1;
+                        }
                         break;
-                    }
-                }
-                else if (firstPlayerMovement == "right")
-                {
-                    firstPlayerCol++;
-                    matrix[firstPlayerRow][firstPlayerCol] = 'f';
-                    if (matrix[firstPlayerRow][firstPlayerCol] == matrix[secondPlayerRow][secondPlayerCol])
-                    {
+                    case "right":
+                        if (secondPlayerCol < matrix[0].Length - 1)
+                        {
+                            secondPlayerCol++;
+                        }
+                        else
+                        {
+                            secondPlayerCol = 0;
+                        }
                         break;
-                    }
                 }
 
-                if (secondPlayerMovement == "down")
+                if (matrix[secondPlayerRow][secondPlayerCol] == '*')
                 {
-                    secondPlayerRow++;
                     matrix[secondPlayerRow][secondPlayerCol] = 's';
-                    if (matrix[firstPlayerRow][firstPlayerCol] == matrix[secondPlayerRow][secondPlayerCol])
-                    {
-                        break;
-                    }
-
                 }
-                else if (secondPlayerMovement == "up")
+                else if (matrix[secondPlayerRow][secondPlayerCol] == 'f')
                 {
-                    secondPlayerRow--;
-                    matrix[secondPlayerRow][secondPlayerCol] = 's';
-                    if (matrix[firstPlayerRow][firstPlayerCol] == matrix[secondPlayerRow][secondPlayerCol])
-                    {
-                        break;
-                    }
-
+                    matrix[secondPlayerRow][secondPlayerCol] = 'x';
+                    break;
                 }
-                else if (secondPlayerMovement == "left")
-                {
-                    secondPlayerCol--;
-                    matrix[secondPlayerRow][secondPlayerCol] = 's';
-                    if (matrix[firstPlayerRow][firstPlayerCol] == matrix[secondPlayerRow][secondPlayerCol])
-                    {
-                        break;
-                    }
-
-                }
-                else if (secondPlayerMovement == "right")
-                {
-                    secondPlayerCol++;
-                    matrix[secondPlayerRow][secondPlayerCol] = 's';
-                    if (matrix[firstPlayerRow][firstPlayerCol] == matrix[secondPlayerRow][secondPlayerCol])
-                    {
-                        break;
-                    }
-
-                }
-
-                input = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
             }
 
             foreach (var item in matrix)
             {
                 Console.WriteLine(string.Join("", item));
             }
+
+            input = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
         }
+
     }
 }
