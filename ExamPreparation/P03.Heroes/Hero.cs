@@ -5,7 +5,7 @@
 
     public class Hero
     {
-        private Dictionary<string, Dictionary<int, Item>> item;
+        //private Dictionary<string, Dictionary<int, Item>> item;
 
         public Hero(string name, int level, Item item)
         {
