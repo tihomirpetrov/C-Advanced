@@ -22,9 +22,9 @@
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine("Item:");
-            sb.AppendLine($"  * Strength: {strengthValue}");
-            sb.AppendLine($"  * Ability: {abilityValue}");
-            sb.AppendLine($"  * Intelligence: {intelligenceValue}");
+            sb.AppendLine($"  * Strength: {this.Strength}");
+            sb.AppendLine($"  * Ability: {this.Ability}");
+            sb.AppendLine($"  * Intelligence: {this.Intelligence}");
 
             return sb.ToString();
         }

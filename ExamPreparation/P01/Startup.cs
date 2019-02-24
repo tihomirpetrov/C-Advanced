@@ -55,6 +55,7 @@
                     Console.WriteLine($"{halls.Dequeue()} -> {string.Join(", ", peopleList)}");
                     allPeople = 0;
                     peopleList.Clear();
+                    return;
                 }
                 else
                 {

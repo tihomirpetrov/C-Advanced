@@ -5,13 +5,13 @@
 
     public class Hero
     {
-        private Dictionary<int, Item> item;
+        private Dictionary<string, Dictionary<int, Item>> item;
 
-        public Hero(string name, int level, Item Item)
+        public Hero(string name, int level, Item item)
         {
             this.Name = name;
             this.Level = level;
-            this.item = new Dictionary<int, Item>();
+            this.Item = item;
         }
 
         public string Name { get; set; }
@@ -23,14 +23,10 @@
         public override string ToString()
         {
             StringBuilder sbHero = new StringBuilder();
-            sbHero.AppendLine($"Hero: {Name} – {Level}lvl");
-            sbHero.AppendLine(" Item:");
-            sbHero.AppendLine($"  * Strength: {strengthValue}");
-            sbHero.AppendLine($"  * Ability: {abilityValue}");
-            sbHero.AppendLine($"  * Intelligence: {intelligenceValue}");
+            sbHero.AppendLine($"Hero: {this.Name} – {this.Level}lvl");
+            sbHero.Append($"{this.Item.ToString()}");         
 
             return base.ToString();
         }
-
     }
 }
