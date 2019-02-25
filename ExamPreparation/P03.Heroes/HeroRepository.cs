@@ -20,15 +20,18 @@
 
         public void Remove(string name)
         {
-            for (int i = 0; i < this.data.Count; i++)
+            if (this.data.Any(x => x.Name == name))
             {
-                int index = -1;
-                if (this.data[i].Name.CompareTo(name) == 0)
+                for (int i = 0; i < this.data.Count; i++)
                 {
-                    index = i;
+                    int index = -1;
+                    if (this.data[i].Name.CompareTo(name) == 0)
+                    {
+                        index = i;
+                    }
+                    this.data.RemoveAt(i);
                 }
-                this.data.RemoveAt(i);
-            }            
+            }
         }
 
         public Hero GetHeroWithHighestStrength()

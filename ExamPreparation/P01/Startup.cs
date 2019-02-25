@@ -16,57 +16,11 @@
 
             while (input.Count > 0)
             {
-                string currentPeople = input.Pop();
-                int result;
-                bool isNumber = int.TryParse(currentPeople, out result);
-
-                if (isNumber && halls.Count > 0)
-                {
-                    people.Enqueue(result);
-                }
-                else if (!isNumber)
-                {
-                    halls.Enqueue(currentPeople);
-                }
-            }
-            
-            while (halls.Count > 0 && people.Count > 0)
-            {
-                int currentPeople = people.Peek();
-                if (currentPeople > maxCapacity)
-                {
-                    break;
-                }
-                if (allPeople + currentPeople < maxCapacity)
-                {
-                    peopleList.Add(currentPeople);
-                    allPeople += people.Dequeue();
-                }
-                else if (allPeople + currentPeople == maxCapacity)
-                {
-                    peopleList.Add(currentPeople);
-                    allPeople += people.Dequeue();
-                    Console.WriteLine($"{halls.Dequeue()} -> {string.Join(", ", peopleList)}");
-                    allPeople = 0;
-                    peopleList.Clear();
-                }
-                else if (allPeople + currentPeople > maxCapacity && halls.Count > 1)
-                {
-                    Console.WriteLine($"{halls.Dequeue()} -> {string.Join(", ", peopleList)}");
-                    allPeople = 0;
-                    peopleList.Clear();
-                    return;
-                }
-                else
-                {
-                    break;
-                }
+                string temp = input.Pop();
+                bool isNumber
             }
 
-            if (halls.Count == 0 && peopleList.Count > 0)
-            {
-                Console.WriteLine($"{halls.Dequeue()} -> {string.Join(", ", peopleList)}");
-            }
+
         }
     }
 }
