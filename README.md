@@ -12,3 +12,8 @@ C# Advanced - january 2019
 05. Functional Programming - Lab
 05. Functional Programming - Exercise
 06. Defining Classes - Lab
+06. Defining Classes - Exercise
+08.Generics - Lab
+08.Generics - Exercise
+09.Iterators and Comparators - Lab
+09.Iterators and Comparators - Exercise
